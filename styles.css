@@ -87,7 +87,7 @@ a{
 
 .st-container {
     position: absolute;
-    width: 760px;
+    width: 576px;;
     height: 100%;
     top: 0;
     left: 0;
@@ -120,6 +120,7 @@ a{
 }
 
 
+/*
 .st-container:before {
     content: '';
     position: fixed;
@@ -129,33 +130,44 @@ a{
     z-index: 9;
     bottom: 0;
 }
+*/
+
+/*
+#st-control-1link, #st-control-1 {
+	display: none;
+}
+*/
+
+.moveLeft{
+	padding-right: 35px;
+}
 
 #st-control-1, #st-control-1 + a {
-    left: 0;
+    left: -100%;
 }
  
 #st-control-2, #st-control-2 + a {
-    left: 14%;
+    left: -114%;
 }
  
 #st-control-3, #st-control-3 + a {
-    left: 28%;
+    left: -128%;
 }
  
 #st-control-4, #st-control-4 + a {
-    left: 42%;
+    left: -142%;
 }
  
 #st-control-5, #st-control-5 + a {
-    left: 54%;
+    left: -154%;
 }
 
 #st-control-6, #st-control-6 + a {
-    left: 68%;
+    left: -168%;
 }
 
 #st-control-7, #st-control-7 + a {
-    left: 85%;
+    left: -185%;
 }
 
 .st-container > input:hover + a{
@@ -489,16 +501,16 @@ color: grey;
 }
 
 .flipper {
-	-webkit-transition: 0.01s;
+	-webkit-transition: 0.2s;
 	-webkit-transform-style: preserve-3d;
 
-	-moz-transition: 0.01s;
+	-moz-transition: 0.2s;
 	-moz-transform-style: preserve-3d;
   
-  -o-transition: 0.01s;
+  -o-transition: 0.2s;
 	-o-transform-style: preserve-3d;
 
-	transition: 0.01s;
+	transition: 0.2s;
 	transform-style: preserve-3d;
 
 	position: relative;
@@ -526,8 +538,10 @@ color: grey;
 }
 
 .past_projects .back p {
+	font-weight: bold;
+	font-size: 18px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 15px;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -544,8 +558,10 @@ color: grey;
 }
 
 .about .back p {
+	font-size: 18px;
+	font-weight: bold;
 	position: absolute;
-	bottom: 0px;
+	bottom: 18px;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -556,14 +572,20 @@ color: grey;
 
 }
 
+.panel1About{
+	background: blue;
+}
+
 .music .front {
 	background: url(img/music.png);
 	z-index: 2;
 }
 
 .music .back p {
+	font-weight: bold;
+	font-size: 20px;
 	position: absolute;
-	bottom: 20px;
+	bottom: 15px;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -580,8 +602,10 @@ color: grey;
 }
 
 .food .back p {
+	font-weight: bold;
+	font-size: 20px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 15px;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -598,8 +622,10 @@ color: grey;
 }
 
 .photography .back p {
+	font-weight: bold;
+	font-size: 20px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 15px;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -616,8 +642,10 @@ color: grey;
 }
 
 .blog .back p {
+	font-weight: bold;
+	font-size: 20px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 15px;
 	left: 0;
 	right: 0;
 	text-align: center;
