@@ -2,6 +2,7 @@
 		var K = jQuery.noConflict();
 				
 		
+/*
 		K(".randomizeRow1").html(K(".randomizeRow1 .randomizedBlock").sort(function(){
 		    return Math.random()-0.5;
 		}));
@@ -20,6 +21,7 @@
 		K(".randomizeRow6").html(K(".randomizeRow6 .randomizedBlock").sort(function(){
 		    return Math.random()-0.5;
 		}));
+*/
 		
 		K(".block").hover(function(){
 		   K(this).addClass("hover");
@@ -31,46 +33,37 @@
 		  },500);
 		});
 		
-		K("#hi").typed({
-		strings: ["Hi,"],
+		
+		K(".link_block").hover(function(){
+		   K(this).addClass("hover");
+		},
+		function(){
+		  var self = this;
+		  setTimeout(function() {
+		         K(self).removeClass('hover');
+		  },500);
+		});
+		
+		
+		K("#typed").typed({
+		strings: ["Hi, I'm Asaph"],
 		typeSpeed: 30
       	});
-      	K( ".typed-cursor" ).replaceWith( "" );
-
-      	K("#im").typed({
-		strings: ["^200I'm"],
-		typeSpeed: 30
-      	});
-      	K( ".typed-cursor" ).replaceWith( "" );
-
-      	K("#Asaph").typed({
-		strings: ["^400Asaph"],
-		typeSpeed: 30
-      	});
-      	K( ".typed-cursor" ).replaceWith( "" );
       	
-      	
-      	
-      	K("#i").typed({
-		strings: ["^1000I"],
+      	K("#typed2").typed({
+		strings: ["^1000I make"],
 		typeSpeed: 30
       	});
-      	K( ".typed-cursor" ).replaceWith( "" );
 
-      	K("#make").typed({
-		strings: ["^1200make "],
-		typeSpeed: 30
-      	});
-      	K( ".typed-cursor" ).replaceWith( "" );
 
 	    K("#stuff").typed({
-	    strings: ["^1500websites", "apps", "music", "stuff :)"],
+	    strings: ["^1500websites", "apps", "music", "stuff"],
 	        typeSpeed: 30, // typing speed
 	        backDelay: 300, // pause before backspacing
 	        loop: false, // loop on or off (true or false)
 	        loopCount: false, // number of loops, false = infinite
 	    });
-      	K( ".typed-cursor" ).replaceWith( "" );
+/*       	K( ".typed-cursor" ).replaceWith( "" ); */
       	
 /*
       	K("#i2").typed({
@@ -95,8 +88,8 @@
 */
 
 		
+		K('#titles').addClass('animated fadeIn');
 /*
-		K('#hi').addClass('animated bounceInLeft');
 		K('#Asaph').addClass('animated flipInX');
 		K('#im').addClass('animated fadeIn');
 		K('#i').addClass('animated fadeIn');
