@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <title>Asaph Yuan</title>
 
-    <!-- Load local lib and tests. -->
+    <!-- -->
     <link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="scripts/jquery-1.11.1.min.js"></script>
+	<script src="scripts/typed.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
   </head>
 
@@ -48,7 +51,12 @@
     
 	<div class="tablet">
 		<div class="st-container">
-	    
+	    	<div id="social-media-links">
+			     <a target="_blank" href="http://twitter.com/asaphyuan" id="twitter-link"></a>
+			     <a target="_blank" href="http://www.linkedin.com/in/asaphyuan" id="li-link"></a>
+			     <a target="_blank" href="http://www.facebook.com/asaph.yuan" id="fb-link"></a>
+			     <a target="_blank" href="http://github.com/asaphy" id="github-link"></a>
+			</div>
 	    <input type="radio" name="radio-set" id="st-control-1" onClick="checkHome();"/>
 	    <a href="#st-panel-1" id="st-control-1link" ><span class="moveLeft">Home</span></a>
 	     
@@ -71,62 +79,18 @@
 	    <a href="#st-panel-6" id="st-control-7link"><span class="moveLeft">Food</span></a>
 		
 	    <div class="st-scroll">
-	 
+	    
 	        <section class="st-panel" id="st-panel-1">
 	            <div class="st-deco" data-icon="H"></div>
 				<div class="section group">
+
+
 	  <div class="tablet_container">
-		<div id="my-element" class="col block">
+	  	<div class="randomizeRow1">
+		<div id="my-element" class="col block randomizedBlock">
 		</div>
-		<div class="flip-container col link_block food" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkFood();">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Food</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		</div>
-		<div class="col block">
-			<h1 id="im">I'm</h1>
-		</div>
-		<div class="col block">
-			<h2 id="Asaph">Asaph,</h2>
-		</div>
-		<div class="col block">
-			<h1 id="hi">HI!</h1>
-		</div>
-	  </div>
-	</div><!--end of row 1 -->
-	<div class="section group">
-	  <div class="tablet_container">
-		<div class="col block">
-		</div>
-		<div class="col block">
-		</div>
-		<div class="col block">
-		</div>
-		<div class="col block">
-			<h1 id="i">I</h1>
-		</div>
-		<div class="col block">
-			<h1 id="make">Make</h1>
-		</div>
-		<div class="col block">
-			<h1 id="stuff">Stuff</h1>
-		</div>
-	  </div>
-	</div><!--end of row 2 -->
-	<div class="section group">
-	  <div class="tablet_container">
-		<div class="col block">
-		</div>
-		<div class="col block">
-		</div>
-				<div class="flip-container col link_block about" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkAbout();">
+
+	  <div class="flip-container col link_block about randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkAbout();">
 		  <div class="flipper">
 		    <div class="front">
 		    </div>
@@ -136,23 +100,27 @@
 		</div>
 		</a>
 	  </div>
+	  
+	  
+		<div class="col block randomizedBlock">
+		</div>
+	  	</div>
 		<div class="col block">
-			<h1 id="God">God</h1>
+			<div id="hi"></div>
 		</div>
 		<div class="col block">
-			<h1 id="i2">I</h1>
+			<div id="im"></div>
 		</div>
 		<div class="col block">
-			<h1 id="love">Love</h1>
+			<div id="Asaph"></div>
 		</div>
 	  </div>
-	</div><!--end of row 3 -->
+	</div><!--end of row 1 -->
 	<div class="section group">
 	  <div class="tablet_container">
-		<div class="col block">
+	  	<div class="randomizeRow2">
 
-		</div>
-		<div class="flip-container col link_block past_projects" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkProjects();">
+		<div class="flip-container col link_block past_projects randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkProjects();">
 		  <div class="flipper">
 		    <div class="front">
 		    </div>
@@ -162,31 +130,30 @@
 		  </div>
 		  </a>
 		</div>
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="col block randomizedBlock">
+		</div>
+	  	</div>
 		<div class="col block">
-
+			<div id="i"></div>
 		</div>
 		<div class="col block">
-
+			<div id="make"></div>
 		</div>
 		<div class="col block">
-
-		</div>
-		<div class="col block">
-
+			<div id="stuff"></div>
 		</div>
 	  </div>
-	</div><!--end of row 4 -->
+	</div><!--end of row 2 -->
 	<div class="section group">
 	  <div class="tablet_container">
-		<div class="col block">
+	  	<div class="randomizeRow3">
+		<div class="col block randomizedBlock">
 		</div>
-		<div class="col block">
+		<div class="col block randomizedBlock">
 		</div>
-		<div class="col block">
-		</div>
-		<div class="col block">
-		</div>
-		<div class="flip-container col link_block blog" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkBlog();">
+		<div class="flip-container col link_block blog randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkBlog();">
 		  <div class="flipper">
 		    <div class="front">
 		    </div>
@@ -196,13 +163,22 @@
 		</div>
 		</a>
 	  </div>
+	  	</div>
+		<div class="col block">
+			<div id="i2"></div>
+		</div>
+		<div class="col block">
+			<div id="love"></div>
+		</div>
 		<div class="col block">
 		</div>
 	  </div>
-	</div><!--end of row 5 -->
+	</div><!--end of row 3 -->
 	<div class="section group">
-	  <div class="tablet_container">
-		<div class="flip-container col link_block music" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkMusic();">
+	  <div class="tablet_container randomizeRow4">
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="flip-container col link_block music randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkMusic();">
 		  <div class="flipper">
 		    <div class="front">
 		    </div>
@@ -212,9 +188,33 @@
 		</div>
 		</a>
 	  </div>
-		<div class="col block">
+		<div class="col block randomizedBlock">
+
 		</div>
-		<div class="flip-container col link_block photography" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkPhotography();">
+		<div class="col block randomizedBlock">
+
+		</div>
+		<div class="col block randomizedBlock">
+
+		</div>
+		<div class="col block randomizedBlock">
+
+		</div>
+	  </div>
+	</div><!--end of row 4 -->
+	<div class="section group">
+	  <div class="tablet_container randomizeRow5">
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="col block randomizedBlock">
+		</div>
+
+	  
+	  		<div class="flip-container col link_block photography randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkPhotography();">
 		  <div class="flipper">
 		    <div class="front">
 		    </div>
@@ -224,18 +224,53 @@
 		</div>
 		</a>
 	  </div>
-		<div class="col block">
+		<div class="col block randomizedBlock">
 		</div>
-		<div class="col block">
+	  </div>
+	</div><!--end of row 5 -->
+	<div class="section group">
+	  <div class="tablet_container randomizeRow6">
+
+		<div class="col block randomizedBlock">
 		</div>
-		<div class="col block">
-			<div class="absolute_center">
-			Created by Asaph Yuan
+	  
+	  	<div class="flip-container col link_block food randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkFood();">
+			  <div class="flipper">
+			    <div class="front">
+			    </div>
+			    <div class="back">
+			      <p>Food</p>
+			    </div>
 			</div>
+			</a>
+		</div>
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="col block randomizedBlock">
+		</div>
+		<div class="col block randomizedBlock">
 		</div>
 	  </div>
 	</div><!--end of row 6 -->
-	        </section>
+		<div class="section group">
+	  <div class="tablet_container">
+		<div class="col block">
+		</div>
+		<div class="col block">
+		</div>
+		<div class="col block">
+		</div>
+		<div class="col block">
+		</div>
+		<div class="col block">
+		</div>
+		<div class="col block">
+		</div>
+	  </div>
+	</div><!--end of row 7 -->
+	</section>
 	         
 	        <section class="st-panel" id="st-panel-2">
 						<div class="st-deco" data-icon="H"></div>

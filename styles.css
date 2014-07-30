@@ -8,6 +8,65 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
+
+#social-media-links {
+     position: fixed;
+     top: 50%; /* distance to the top of the menu div from the top of the page */
+     right: 0;
+     width:64px; /* width of the menu div */    
+     z-index: 999999;
+}
+#social-media-links a{
+	 height: 56px;
+	 width: 56px;
+     float: left;
+     z-index: 999999;
+}
+
+#twitter-link {
+     background-image: url('img/twitter.png');
+     opacity: 0.7;
+}
+
+#li-link {
+     background-image: url('img/linkedin.png');
+     opacity: 0.7;
+}
+
+#fb-link {
+     background-image: url('img/fb.png');
+     opacity: 0.7;
+}
+
+#github-link {
+     background-image: url('img/github.png');
+     opacity: 0.7;
+}
+
+#social-media-links a:hover{
+	opacity: 1;
+}
+
+#vertical-nav a:hover {color: #FF0000}
+
+#Asaph, #God, #love{
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+#stuff{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+#hi, #im, #i, #make, #i2{
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 32px;
+}
+
 #Asaph {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
@@ -87,7 +146,7 @@ a{
 
 .st-container {
     position: absolute;
-    width: 576px;;
+    width: 760px;
     height: 100%;
     top: 0;
     left: 0;
@@ -196,7 +255,7 @@ a{
 }
  
 .st-panel{
-    background: #fff;
+    background: #d3d3d3;
     overflow: hidden;
 } 
 
@@ -287,7 +346,7 @@ color: grey;
 	height: 96px;
 	background-image:url('img/wood.png');
 	background-repeat:repeat-y;
-	border-radius: 5px;
+	border-radius: 0px;
 	-webkit-filter:saturate(.7);
 	opacity:0.85;
 	text-align: center;
@@ -297,7 +356,6 @@ color: grey;
 .link_block {
 	width: 96px;
 	height: 96px;
-	border-radius: 5px;
 }
 
 .mobile_block {
@@ -327,7 +385,7 @@ color: grey;
 
 .tablet_container{
 	margin:auto;
-	width: 576px;
+	width: 600px;
 }
 
 .desktop_container{
@@ -351,10 +409,8 @@ color: grey;
 .col {
 	display: block;
 	float:left;
-	margin: 1px 0 0% 0%;
+	margin: 0.5px 0.5px 0.5px 0.5px;
 }
-.col:first-child { margin-left: 0; }
-
 
 /*  GROUPING  */
 .group:before,
@@ -432,9 +488,7 @@ color: grey;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-  background: rgb(136,214,57);
-  border-radius: 5px;
-
+  background: #069d1c;
 }
 
 .about.flip-container {
@@ -442,9 +496,7 @@ color: grey;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-  background: rgb(103,103,100);
-  border-radius: 5px;
-
+  background: #5a5a57;
 }
 
 .music.flip-container {
@@ -452,9 +504,7 @@ color: grey;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-  background: rgb(41,178,194);
-  border-radius: 5px;
-
+  background: #259fad;
 }
 
 .food.flip-container {
@@ -462,9 +512,7 @@ color: grey;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-  background: rgb(212,26,26);
-  border-radius: 5px;
-
+  background: #bd1717;
 }
 
 .photography.flip-container {
@@ -472,9 +520,7 @@ color: grey;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-  background: rgb(157,76,229);
-  border-radius: 5px;
-
+  background: #9136e2;
 }
 
 .blog.flip-container {
@@ -482,9 +528,7 @@ color: grey;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-  background: rgb(247,159,15);
-  border-radius: 5px;
-
+  background: #e59108;
 }
 
 	.flip-container:hover .flipper,  
@@ -654,6 +698,11 @@ color: grey;
   line-height: 1.5em;
   	color: white;
 
+}
+
+
+#social_media {
+	background-image:url('img/social_media.png');
 }
 
 #aboutmediv{
