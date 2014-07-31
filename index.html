@@ -51,12 +51,6 @@
     
 	<div class="tablet">
 		<div class="st-container">
-	    	<div id="social-media-links">
-			     <a target="_blank" href="http://twitter.com/asaphyuan" id="twitter-link"></a>
-			     <a target="_blank" href="http://www.linkedin.com/in/asaphyuan" id="li-link"></a>
-			     <a target="_blank" href="http://www.facebook.com/asaph.yuan" id="fb-link"></a>
-			     <a target="_blank" href="http://github.com/asaphy" id="github-link"></a>
-			</div>
 	    <input type="radio" name="radio-set" id="st-control-1" onClick="checkHome();"/>
 	    <a href="#st-panel-1" id="st-control-1link" ><span class="moveLeft">Home</span></a>
 	     
@@ -81,11 +75,24 @@
 	    <div class="st-scroll">
 	    
 	        <section class="st-panel" id="st-panel-1">
+	        <div id="background">
 	            <div class="st-deco" data-icon="H"></div>
 				<div class="section group">
 
 
 	  <div class="tablet_container">
+<!--
+	  	<div id="social-media-links">
+			<a target="_blank" href="http://twitter.com/asaphyuan" id="twitter-link"></a>
+			<a target="_blank" href="http://www.linkedin.com/in/asaphyuan" id="li-link"></a>
+			<a target="_blank" href="http://www.facebook.com/asaph.yuan" id="fb-link"></a>
+			<a target="_blank" href="http://github.com/asaphy" id="github-link"></a>
+	  	</div>
+		<div id="next">
+			<a href="#" onClick="checkAbout();">
+		</div>
+-->
+
 	  	<div id="hiimasaph">
 	  		<div id="typed">
 			</div>
@@ -94,8 +101,6 @@
 				<span id="stuff">
 				</span>
 			</div>
-			
-			<p id="titles">Designer \ Developer \ Musician</p>
 	  	</div>
 	  	<div class="randomizeRow1">
 		<div class="col block randomizedBlock">
@@ -155,28 +160,14 @@
 	</div><!--end of row 2 -->
 	<div class="section group">
 	  <div class="tablet_container">
-	  	<div class="randomizeRow3">
-	  		  	
-	  	<div id='two-zero' class="flip-container col link_block about randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkAbout();">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>About Me</p>
-		    </div>
+	  	<div class="col block">
+			<div id='two-zero'>
+			</div>
 		</div>
-		</a>
-	  </div>
-	  		<div id='two-one' class="flip-container col link_block past_projects randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkProjects();">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Projects</p>
-		    </div>
-		  </div>
-		  </a>
-		</div>
+		<div class="col block">
+			<div id='two-one'>
+			</div>
+		</div>	  	
 		<div class="col block">
 			<div id='two-two'>
 			</div>
@@ -193,11 +184,70 @@
 			<div id='two-five'>
 			</div>
 		</div>
-	  </div>
 	</div><!--end of row 3 -->
 	<div class="section group">
 	  <div class="tablet_container randomizeRow4">
-		  <div id='three-zero' class="flip-container col link_block blog randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkBlog();">
+
+	  <div class="col block randomizedBlock">
+			<div id='three-zero'>
+			</div>
+		</div>
+		<div class="col block randomizedBlock">
+			<div id='three-one'>
+			</div>
+		</div>
+		<div class="col block randomizedBlock">
+			<div id='three-two'>
+			</div>
+		</div>
+		<div class="col block randomizedBlock">
+			<div id='three-three'>
+			</div>
+		</div>
+		<div id='three-four' class="flip-container col link_block about randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkAbout();">
+		  <div class="flipper">
+		    <div class="front">
+		    </div>
+		    <div class="back">
+		      <p>About Me</p>
+		    </div>
+		</div>
+		</a>
+	  </div>
+	  		<div id='three-five' class="flip-container col link_block past_projects randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkProjects();">
+		  <div class="flipper">
+		    <div class="front">
+		    </div>
+		    <div class="back">
+		      <p>Projects</p>
+		    </div>
+		  </div>
+		  </a>
+		</div>
+	  </div>
+	</div><!--end of row 4 -->
+	<div class="section group">
+	  <div class="tablet_container randomizeRow5">
+
+
+		<div class="col block randomizedBlock">
+			<div id='four-zero'>
+			</div>
+		</div>
+		<div class="col block randomizedBlock">
+			<div id='four-one'>
+			</div>
+		</div>
+	  <div class="col block randomizedBlock">
+	  	<div id='four-two'>
+		</div>
+	  </div>
+	  <div class="col block randomizedBlock">
+		<div id='four-three'>
+		</div>
+	  </div>
+	  
+	  <div id='four-four' class="flip-container col link_block blog randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkBlog();">
 		  <div class="flipper">
 		    <div class="front">
 		    </div>
@@ -207,7 +257,7 @@
 		</div>
 		</a>
 	  </div>
-		<div id="three-one" class="flip-container col link_block music randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkMusic();">
+		<div id="four-five" class="flip-container col link_block music randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkMusic();">
 		  <div class="flipper">
 		    <div class="front">
 		    </div>
@@ -216,64 +266,6 @@
 		    </div>
 		</div>
 		</a>
-	  </div>
-	  <div class="col block randomizedBlock">
-			<div id='three-two'>
-			</div>
-		</div>
-		<div class="col block randomizedBlock">
-			<div id='three-three'>
-			</div>
-		</div>
-		<div class="col block randomizedBlock">
-			<div id='three-four'>
-			</div>
-		</div>
-		<div class="col block randomizedBlock">
-			<div id='three-five'>
-			</div>
-		</div>
-
-	  </div>
-	</div><!--end of row 4 -->
-	<div class="section group">
-	  <div class="tablet_container randomizeRow5">
-		<div id="four-zero" class="flip-container col link_block photography randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkPhotography();">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Photos</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-	  <div id="four-one" class="flip-container col link_block food randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkFood();">
-			  <div class="flipper">
-			    <div class="front">
-			    </div>
-			    <div class="back">
-			      <p>Food</p>
-			    </div>
-			</div>
-			</a>
-		</div>
-
-		<div class="col block randomizedBlock">
-			<div id='four-two'>
-			</div>
-		</div>
-		<div class="col block randomizedBlock">
-			<div id='four-three'>
-			</div>
-		</div>
-	  <div class="col block randomizedBlock">
-	  	<div id='four-four'>
-		</div>
-	  </div>
-	  <div class="col block randomizedBlock">
-		<div id='four-five'>
-		</div>
 	  </div>
 	  </div>
 	</div><!--end of row 5 -->
@@ -296,13 +288,25 @@
 			<div id='five-three'>
 			</div>
 		</div>
-		<div class="col block randomizedBlock">
-			<div id='five-four'>
-			</div>
+		<div id="five-four" class="flip-container col link_block photography randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkPhotography();">
+		  <div class="flipper">
+		    <div class="front">
+		    </div>
+		    <div class="back">
+		      <p>Photos</p>
+		    </div>
 		</div>
-		<div class="col block randomizedBlock">
-			<div id='five-five'>
+		</a>
+	  </div>
+	  <div id="five-five" class="flip-container col link_block food randomizedBlock" ontouchstart="this.classList.toggle('hover');"><a href="#" onClick="checkFood();">
+			  <div class="flipper">
+			    <div class="front">
+			    </div>
+			    <div class="back">
+			      <p>Food</p>
+			    </div>
 			</div>
+			</a>
 		</div>
 	  </div>
 	</div><!--end of row 6 -->
@@ -334,36 +338,37 @@
 		</div>
 	  </div>
 	</div><!--end of row 7 -->
+	</div><!--end of background-->
 	</section>
 	         
 	        <section class="st-panel" id="st-panel-2">
 						<div class="st-deco" data-icon="H"></div>
-						<h2>Serendipity</h2>
-						<p>Banksy adipisicing eiusmod banh mi sed. Squid stumptown est odd future nisi, commodo mlkshk pop-up adipisicing retro.</p>
+						<h2>About Me</h2>
+						<p>Somethings I think about me</p>
 					</section>
 					
 					<section class="st-panel st-color" id="st-panel-3">
 						<div class="st-deco" data-icon="2"></div>
-						<h2>Happiness</h2>
-						<p>Art party readymade beard labore cosby sweater culpa. Art party whatever incididunt, scenester umami polaroid tofu.</p>
+						<h2>Projects</h2>
+						<p>My past projects.</p>
 					</section>
 					
 					<section class="st-panel" id="st-panel-4">
 						<div class="st-deco" data-icon="B"></div>
-						<h2>Tranquillity</h2>
-						<p>Sint aute occaecat id vice. Post-ironic fap pork belly next level godard, id fanny pack williamsburg forage truffaut.</p>
+						<h2>Blog</h2>
+						<p>Blogs I've blogged.</p>
 					</section>
 					
 					<section class="st-panel st-color" id="st-panel-5">
 						<div class="st-deco" data-icon="x"></div>
-						<h2>Positivity</h2>
-						<p>Mixtape fap leggings art party, butcher authentic farm-to-table you probably haven't heard of them do labore cosby sweater.</p>
+						<h2>Music</h2>
+						<p>Music I've made</p>
 					</section>
 					
 					<section class="st-panel" id="st-panel-6">
 						<div class="st-deco" data-icon="Ç"></div>
-						<h2>Passion</h2>
-						<p>Fixie ad odd future polaroid dreamcatcher, nesciunt carles bicycle rights accusamus mcsweeney's mumblecore nulla irony.</p>
+						<h2>Photo</h2>
+						<p>Photos I take.</p>
 					</section>
 	        
 	        <section class="st-panel st-color" id="st-panel-7">
@@ -373,513 +378,7 @@
 	     
 		</div><!-- // st-container -->
 	    </div><!--end of tablet -->
-    
-    
-    
-    <div class="desktop">
-	<div class="section group">
-	  <div class="desktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="flip-container col link_block blog" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Things I write about</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		    
-		</div>
-	  </div>
-	</div><!--end of row 1 -->
-	<div class="section group">
-	  <div class="desktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="flip-container col link_block past_projects" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Apps Websites Projects!</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		</div>
-		<div class="flip-container col link_block photography" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Things I take pictures of</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-	  </div>
-	</div><!--end of row 2 -->
-	<div class="section group">
-	  <div class="desktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  <div class="center_i">
-			<img src="img/I.png" alt="I">
-		  </div>
-		</div>
-		<div class="col block">
-		</div>
-		<div class="col block">
-		  <div class="center_m">
-			<img src="img/M.png" alt="M">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_a">
-			<img src="img/A.png" alt="A">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_k">
-			<img src="img/K.png" alt="K">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_e">
-			<img src="img/E.png" alt="E">
-		  </div>
-		</div>
-		<div class="col block">
-		    
-		</div>
-	  </div>
-	</div><!--end of row 3 -->
-	<div class="section group">
-	  <div class="desktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  <div class="center_t">
-			<img src="img/T.png" alt="T">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_h">
-			<img src="img/H.png" alt="H">
-		  </div>
-		</div>
-		<div class="col block">
-			<div class="center_i">
-			<img src="img/I.png" alt="I">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_n">
-			<img src="img/n.png" alt="N">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_g">
-			<img src="img/G.png" alt="G">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_s">
-			<img src="img/S.png" alt="S">
-		  </div>
-		</div>
-		<div class="col block">
-		    
-		</div>
-	  </div>
-	</div><!--end of row 4 -->
-	<div class="section group">
-	  <div class="desktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="flip-container col link_block music" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Music is life</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		    
-		</div>
-	  </div>
-	</div><!--end of row 5 -->
-	<div class="section group">
-	  <div class="desktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="flip-container col link_block about" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Stuff I make up about myself</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="flip-container col link_block food" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>The food I eat</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		    <div class="absolute_center">
-			Created by Asaph Yuan
-			</div>
-		</div>
-	  </div>
-	</div><!--end of row 6 -->
-    </div><!--end of desktop -->
-    
-    
-    
-    <div class="largeDesktop">
-	<div class="section group">
-	  <div class="largeDesktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="flip-container col link_block food" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>The food I eat</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		    
-		</div>
-		<div class="col block">
 
-		</div>
-		<div class="col block">
-		 
-		</div>
-	  </div>
-	</div><!--end of row 1 -->
-	<div class="section group">
-	  <div class="largeDesktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="past_projects flip-container col link_block " ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Apps Websites Projects!</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		    
-		</div>
-		<div class="col block">
-
-		</div>
-		<div class="col block">
-		 
-		</div>
-	  </div>
-	</div><!--end of row 2 -->
-	<div class="section group">
-	  <div class="largeDesktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  <div class="center_i">
-			<img src="img/I.png" alt="I">
-		  </div>
-		</div>
-		<div class="col block">
-		</div>
-		<div class="col block">
-		  <div class="center_m">
-			<img src="img/M.png" alt="M">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_a">
-			<img src="img/A.png" alt="A">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_k">
-			<img src="img/K.png" alt="K">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_e">
-			<img src="img/E.png" alt="E">
-		  </div>
-		</div>
-		<div class="col block">
-
-		</div>
-		<div class="col block">
-		 
-	  </div>
-	</div><!--end of row 3 -->
-	<div class="section group">
-	  <div class="largeDesktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  <div class="center_t">
-			<img src="img/T.png" alt="T">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_h">
-			<img src="img/H.png" alt="H">
-		  </div>
-		</div>
-		<div class="col block">
-			<div class="center_i">
-			<img src="img/I.png" alt="I">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_n">
-			<img src="img/n.png" alt="N">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_g">
-			<img src="img/G.png" alt="G">
-		  </div>
-		</div>
-		<div class="col block">
-		  <div class="center_s">
-			<img src="img/S.png" alt="S">
-		  </div>
-		</div>	
-		<div class="col block">
-
-		</div>
-		<div class="flip-container col link_block photography" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Things I take pictures of</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-	</div><!--end of row 4 -->
-	<div class="section group">
-	  <div class="largeDesktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="flip-container col link_block about" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Stuff I make up about myself</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-		<div class="col block">
-		    
-		</div>
-		<div class="col block">
-
-		</div>
-		<div class="col block">
-		 
-	  </div>
-	</div><!--end of row 5 -->
-	<div class="section group">
-	  <div class="largeDesktop_container">
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="flip-container col link_block music" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Music is life</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-		 
-		</div>
-		<div class="col block">
-		  
-		</div>
-		<div class="col block">
-		   
-		</div>
-				<div class="flip-container col link_block blog" ontouchstart="this.classList.toggle('hover');"><a href="#">
-		  <div class="flipper">
-		    <div class="front">
-		    </div>
-		    <div class="back">
-		      <p>Things I write about</p>
-		    </div>
-		</div>
-		</a>
-	  </div>
-		<div class="col block">
-
-		</div>
-		<div class="col block">
-			<div class="absolute_center">
-			Created by Asaph Yuan
-			</div>
-	    </div>
-	</div><!--end of row 6 -->
-    </div><!--end of largeDesktop -->
   </body>
 
 </html>

@@ -57,26 +57,12 @@
 
 
 	    K("#stuff").typed({
-	    strings: ["^1500websites", "apps", "music", "stuff"],
+	    strings: ["^1500websites", "apps", "music"],
 	        typeSpeed: 30, // typing speed
 	        backDelay: 300, // pause before backspacing
 	        loop: false, // loop on or off (true or false)
 	        loopCount: false, // number of loops, false = infinite
 	    });
-/*       	K( ".typed-cursor" ).replaceWith( "" ); */
-      	
-/*
-      	K("#i2").typed({
-		strings: ["^5200Check"],
-		typeSpeed: 30
-      	});
-      	K( ".typed-cursor" ).replaceWith( "" );
-*/
-
-      	K("#love").typed({
-		strings: ["^5500Enjoy!"],
-		typeSpeed: 30
-      	});
       	K( ".typed-cursor" ).replaceWith( "" );
       	
 /*
@@ -88,17 +74,13 @@
 */
 
 		
-		K('#titles').addClass('animated fadeIn');
-/*
-		K('#Asaph').addClass('animated flipInX');
-		K('#im').addClass('animated fadeIn');
-		K('#i').addClass('animated fadeIn');
-		K('#make').addClass('animated rotateInDownLeft');
-		K('#stuff').addClass('animated fadeInDown');
-		K('#i2').addClass('animated fadeIn');
-		K('#love').addClass('animated rotateInDownLeft');
-		K('#God').addClass('animated zoomInDown'); 
-*/
+		K( "#typed2" ).addClass('animated fadeOut');
+		K( "#stuff" ).addClass('animated fadeOut');
+		
+		setTimeout(function(){
+		  K('#typed2').replaceWith("<p id='titles'>Designer  &#92; &#92;   Developer  &#92; &#92;   Musician</p>"
+);
+		}, 5900);
 	});
 	
 			
