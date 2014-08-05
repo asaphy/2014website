@@ -51,15 +51,15 @@
       	});
       	
       	K("#typed2").typed({
-		strings: ["^1000I make"],
+		strings: ["^1500I make"],
 		typeSpeed: 30
       	});
 
 
 	    K("#stuff").typed({
-	    strings: ["^1500websites", "apps", "music"],
+	    strings: ["^1700websites", "apps", "music"],
 	        typeSpeed: 30, // typing speed
-	        backDelay: 300, // pause before backspacing
+	        backDelay: 500, // pause before backspacing
 	        loop: false, // loop on or off (true or false)
 	        loopCount: false, // number of loops, false = infinite
 	    });
@@ -78,9 +78,12 @@
 		K( "#stuff" ).addClass('animated fadeOut');
 		
 		setTimeout(function(){
-		  K('#typed2').replaceWith("<p id='titles'>Designer  &#92; &#92;   Developer  &#92; &#92;   Musician</p>"
+		  K('#typed2').replaceWith("<p id='titles'>Developer  &#92; &#92;   Blogger  &#92; &#92;   Musician</p>"
 );
-		}, 5900);
+		}, 6400);
+		setTimeout(function(){
+		  K('#stuff').remove();
+		}, 6400);
 	});
 	
 			
@@ -130,31 +133,38 @@
 		L('.st-scroll').css({"transform": "translateY(-100%)"});
 
 		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "0%");
-		M('#st-control-1link').css("left", "0%");
+		M('#st-control-1').css("left", "10%");
+		M('#st-control-1link').css("width", "11.4%");
+		M('#st-control-1link').css("left", "10%");
 		
-		M('#st-control-2').css("left", "14%");
-		M('#st-control-2link').css("left", "14%");
+		M('#st-control-2').css("left", "21.4%");
+		M('#st-control-2link').css("width", "11.4%");
+		M('#st-control-2link').css("left", "21.4%");
 		M('#st-control-2link').css("color", "#4FD5D6");
 	
-		M('#st-control-3').css("left", "28%");
-		M('#st-control-3link').css("left", "28%");
+		M('#st-control-3').css("left", "32.8%");
+		M('#st-control-3link').css("width", "11.4%");
+		M('#st-control-3link').css("left", "32.8%");
 		M('#st-control-3link').css("color", "#FFF");
 		
-		M('#st-control-4').css("left", "42%");
-		M('#st-control-4link').css("left", "42%");
+		M('#st-control-4').css("left", "44.2%");
+		M('#st-control-4link').css("width", "11.4%");
+		M('#st-control-4link').css("left", "44.2%");
 		M('#st-control-4link').css("color", "#FFF");
 		
-		M('#st-control-5').css("left", "56%");
-		M('#st-control-5link').css("left", "56%");
+		M('#st-control-5').css("left", "55.6%");
+		M('#st-control-5link').css("width", "11.4%");
+		M('#st-control-5link').css("left", "55.6%");
 		M('#st-control-5link').css("color", "#FFF");
 		
-		M('#st-control-6').css("left", "70%");
-		M('#st-control-6link').css("left", "70%");
+		M('#st-control-6').css("left", "67%");
+		M('#st-control-6link').css("width", "11.4%");
+		M('#st-control-6link').css("left", "67%");
 		M('#st-control-6link').css("color", "#FFF");
 		
-		M('#st-control-7').css("left", "85%");
-		M('#st-control-7link').css("left", "85%");
+		M('#st-control-7').css("left", "78.4%");
+		M('#st-control-7link').css("width", "11.6%");
+		M('#st-control-7link').css("left", "78.4%");
 		M('#st-control-7link').css("color", "#FFF");
 	}
 
@@ -170,31 +180,38 @@
 		L('.st-scroll').css({"transform": "translateY(-200%)"});
 				
 		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "0%");
-		M('#st-control-1link').css("left", "0%");
+		M('#st-control-1').css("left", "10%");
+		M('#st-control-1link').css("width", "11.4%");
+		M('#st-control-1link').css("left", "10%");
 		
-		M('#st-control-2').css("left", "14%");
-		M('#st-control-2link').css("left", "14%");
+		M('#st-control-2').css("left", "21.4%");
+		M('#st-control-2link').css("width", "11.4%");
+		M('#st-control-2link').css("left", "21.4%");
 		M('#st-control-2link').css("color", "#FFF");
 	
-		M('#st-control-3').css("left", "28%");
-		M('#st-control-3link').css("left", "28%");
+		M('#st-control-3').css("left", "32.8%");
+		M('#st-control-3link').css("width", "11.4%");
+		M('#st-control-3link').css("left", "32.8%");
 		M('#st-control-3link').css("color", "#4FD5D6");
 		
-		M('#st-control-4').css("left", "42%");
-		M('#st-control-4link').css("left", "42%");
+		M('#st-control-4').css("left", "44.2%");
+		M('#st-control-4link').css("width", "11.4%");
+		M('#st-control-4link').css("left", "44.2%");
 		M('#st-control-4link').css("color", "#FFF");
 		
-		M('#st-control-5').css("left", "56%");
-		M('#st-control-5link').css("left", "56%");
+		M('#st-control-5').css("left", "55.6%");
+		M('#st-control-5link').css("width", "11.4%");
+		M('#st-control-5link').css("left", "55.6%");
 		M('#st-control-5link').css("color", "#FFF");
 		
-		M('#st-control-6').css("left", "70%");
-		M('#st-control-6link').css("left", "70%");
+		M('#st-control-6').css("left", "67%");
+		M('#st-control-6link').css("width", "11.4%");
+		M('#st-control-6link').css("left", "67%");
 		M('#st-control-6link').css("color", "#FFF");
 		
-		M('#st-control-7').css("left", "85%");
-		M('#st-control-7link').css("left", "85%");
+		M('#st-control-7').css("left", "78.4%");
+		M('#st-control-7link').css("width", "11.6%");
+		M('#st-control-7link').css("left", "78.4%");
 		M('#st-control-7link').css("color", "#FFF");
 	}
 	
@@ -209,31 +226,38 @@
 		L('.st-scroll').css({"transform": "translateY(-300%)"});
 		
 		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "0%");
-		M('#st-control-1link').css("left", "0%");
+		M('#st-control-1').css("left", "10%");
+		M('#st-control-1link').css("width", "11.4%");
+		M('#st-control-1link').css("left", "10%");
 		
-		M('#st-control-2').css("left", "14%");
-		M('#st-control-2link').css("left", "14%");
+		M('#st-control-2').css("left", "21.4%");
+		M('#st-control-2link').css("width", "11.4%");
+		M('#st-control-2link').css("left", "21.4%");
 		M('#st-control-2link').css("color", "#FFF");
 	
-		M('#st-control-3').css("left", "28%");
-		M('#st-control-3link').css("left", "28%");
+		M('#st-control-3').css("left", "32.8%");
+		M('#st-control-3link').css("width", "11.4%");
+		M('#st-control-3link').css("left", "32.8%");
 		M('#st-control-3link').css("color", "#FFF");
 		
-		M('#st-control-4').css("left", "42%");
-		M('#st-control-4link').css("left", "42%");
+		M('#st-control-4').css("left", "44.2%");
+		M('#st-control-4link').css("width", "11.4%");
+		M('#st-control-4link').css("left", "44.2%");
 		M('#st-control-4link').css("color", "#4FD5D6");
 		
-		M('#st-control-5').css("left", "56%");
-		M('#st-control-5link').css("left", "56%");
+		M('#st-control-5').css("left", "55.6%");
+		M('#st-control-5link').css("width", "11.4%");
+		M('#st-control-5link').css("left", "55.6%");
 		M('#st-control-5link').css("color", "#FFF");
 		
-		M('#st-control-6').css("left", "70%");
-		M('#st-control-6link').css("left", "70%");
+		M('#st-control-6').css("left", "67%");
+		M('#st-control-6link').css("width", "11.4%");
+		M('#st-control-6link').css("left", "67%");
 		M('#st-control-6link').css("color", "#FFF");
 		
-		M('#st-control-7').css("left", "85%");
-		M('#st-control-7link').css("left", "85%");
+		M('#st-control-7').css("left", "78.4%");
+		M('#st-control-7link').css("width", "11.6%");
+		M('#st-control-7link').css("left", "78.4%");
 		M('#st-control-7link').css("color", "#FFF");
 	}
 	
@@ -248,31 +272,38 @@
 		L('.st-scroll').css({"transform": "translateY(-400%)"});
 				
 		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "0%");
-		M('#st-control-1link').css("left", "0%");
+		M('#st-control-1').css("left", "10%");
+		M('#st-control-1link').css("width", "11.4%");
+		M('#st-control-1link').css("left", "10%");
 		
-		M('#st-control-2').css("left", "14%");
-		M('#st-control-2link').css("left", "14%");
+		M('#st-control-2').css("left", "21.4%");
+		M('#st-control-2link').css("width", "11.4%");
+		M('#st-control-2link').css("left", "21.4%");
 		M('#st-control-2link').css("color", "#FFF");
 	
-		M('#st-control-3').css("left", "28%");
-		M('#st-control-3link').css("left", "28%");
+		M('#st-control-3').css("left", "32.8%");
+		M('#st-control-3link').css("width", "11.4%");
+		M('#st-control-3link').css("left", "32.8%");
 		M('#st-control-3link').css("color", "#FFF");
 		
-		M('#st-control-4').css("left", "42%");
-		M('#st-control-4link').css("left", "42%");
+		M('#st-control-4').css("left", "44.2%");
+		M('#st-control-4link').css("width", "11.4%");
+		M('#st-control-4link').css("left", "44.2%");
 		M('#st-control-4link').css("color", "#FFF");
 		
-		M('#st-control-5').css("left", "56%");
-		M('#st-control-5link').css("left", "56%");
+		M('#st-control-5').css("left", "55.6%");
+		M('#st-control-5link').css("width", "11.4%");
+		M('#st-control-5link').css("left", "55.6%");
 		M('#st-control-5link').css("color", "#4FD5D6");
 		
-		M('#st-control-6').css("left", "70%");
-		M('#st-control-6link').css("left", "70%");
+		M('#st-control-6').css("left", "67%");
+		M('#st-control-6link').css("width", "11.4%");
+		M('#st-control-6link').css("left", "67%");
 		M('#st-control-6link').css("color", "#FFF");
 		
-		M('#st-control-7').css("left", "85%");
-		M('#st-control-7link').css("left", "85%");
+		M('#st-control-7').css("left", "78.4%");
+		M('#st-control-7link').css("width", "11.6%");
+		M('#st-control-7link').css("left", "78.4%");
 		M('#st-control-7link').css("color", "#FFF");
 	}
 	
@@ -287,31 +318,38 @@
 		L('.st-scroll').css({"transform": "translateY(-500%)"});
 				
 		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "0%");
-		M('#st-control-1link').css("left", "0%");
+		M('#st-control-1').css("left", "10%");
+		M('#st-control-1link').css("width", "11.4%");
+		M('#st-control-1link').css("left", "10%");
 		
-		M('#st-control-2').css("left", "14%");
-		M('#st-control-2link').css("left", "14%");
+		M('#st-control-2').css("left", "21.4%");
+		M('#st-control-2link').css("width", "11.4%");
+		M('#st-control-2link').css("left", "21.4%");
 		M('#st-control-2link').css("color", "#FFF");
 	
-		M('#st-control-3').css("left", "28%");
-		M('#st-control-3link').css("left", "28%");
+		M('#st-control-3').css("left", "32.8%");
+		M('#st-control-3link').css("width", "11.4%");
+		M('#st-control-3link').css("left", "32.8%");
 		M('#st-control-3link').css("color", "#FFF");
 		
-		M('#st-control-4').css("left", "42%");
-		M('#st-control-4link').css("left", "42%");
+		M('#st-control-4').css("left", "44.2%");
+		M('#st-control-4link').css("width", "11.4%");
+		M('#st-control-4link').css("left", "44.2%");
 		M('#st-control-4link').css("color", "#FFF");
 		
-		M('#st-control-5').css("left", "56%");
-		M('#st-control-5link').css("left", "56%");
+		M('#st-control-5').css("left", "55.6%");
+		M('#st-control-5link').css("width", "11.4%");
+		M('#st-control-5link').css("left", "55.6%");
 		M('#st-control-5link').css("color", "#FFF");
 		
-		M('#st-control-6').css("left", "70%");
-		M('#st-control-6link').css("left", "70%");
+		M('#st-control-6').css("left", "67%");
+		M('#st-control-6link').css("width", "11.4%");
+		M('#st-control-6link').css("left", "67%");
 		M('#st-control-6link').css("color", "#4FD5D6");
 		
-		M('#st-control-7').css("left", "85%");
-		M('#st-control-7link').css("left", "85%");
+		M('#st-control-7').css("left", "78.4%");
+		M('#st-control-7link').css("width", "11.6%");
+		M('#st-control-7link').css("left", "78.4%");
 		M('#st-control-7link').css("color", "#FFF");
 	}
 	
@@ -326,30 +364,37 @@
 		L('.st-scroll').css({"transform": "translateY(-600%)"});
 				
 		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "0%");
-		M('#st-control-1link').css("left", "0%");
+		M('#st-control-1').css("left", "10%");
+		M('#st-control-1link').css("width", "11.4%");
+		M('#st-control-1link').css("left", "10%");
 		
-		M('#st-control-2').css("left", "14%");
-		M('#st-control-2link').css("left", "14%");
+		M('#st-control-2').css("left", "21.4%");
+		M('#st-control-2link').css("width", "11.4%");
+		M('#st-control-2link').css("left", "21.4%");
 		M('#st-control-2link').css("color", "#FFF");
 	
-		M('#st-control-3').css("left", "28%");
-		M('#st-control-3link').css("left", "28%");
+		M('#st-control-3').css("left", "32.8%");
+		M('#st-control-3link').css("width", "11.4%");
+		M('#st-control-3link').css("left", "32.8%");
 		M('#st-control-3link').css("color", "#FFF");
 		
-		M('#st-control-4').css("left", "42%");
-		M('#st-control-4link').css("left", "42%");
+		M('#st-control-4').css("left", "44.2%");
+		M('#st-control-4link').css("width", "11.4%");
+		M('#st-control-4link').css("left", "44.2%");
 		M('#st-control-4link').css("color", "#FFF");
 		
-		M('#st-control-5').css("left", "56%");
-		M('#st-control-5link').css("left", "56%");
+		M('#st-control-5').css("left", "55.6%");
+		M('#st-control-5link').css("width", "11.4%");
+		M('#st-control-5link').css("left", "55.6%");
 		M('#st-control-5link').css("color", "#FFF");
 		
-		M('#st-control-6').css("left", "70%");
-		M('#st-control-6link').css("left", "70%");
+		M('#st-control-6').css("left", "67%");
+		M('#st-control-6link').css("width", "11.4%");
+		M('#st-control-6link').css("left", "67%");
 		M('#st-control-6link').css("color", "#FFF");
 		
-		M('#st-control-7').css("left", "85%");
-		M('#st-control-7link').css("left", "85%");
+		M('#st-control-7').css("left", "78.4%");
+		M('#st-control-7link').css("width", "11.6%");
+		M('#st-control-7link').css("left", "78.4%");
 		M('#st-control-7link').css("color", "#4FD5D6");
 	}
