@@ -1,52 +1,41 @@
-	$(document).ready(function(){
+$(document).ready(function(){
 		var K = jQuery.noConflict();
-				
+
 		
 /*
-		K(".randomizeRow1").html(K(".randomizeRow1 .randomizedBlock").sort(function(){
-		    return Math.random()-0.5;
-		}));
-		K(".randomizeRow2").html(K(".randomizeRow2 .randomizedBlock").sort(function(){
-		    return Math.random()-0.5;
-		}));
-		K(".randomizeRow3").html(K(".randomizeRow3 .randomizedBlock").sort(function(){
-		    return Math.random()-0.5;
-		}));
-		K(".randomizeRow4").html(K(".randomizeRow4 .randomizedBlock").sort(function(){
-		    return Math.random()-0.5;
-		}));
-		K(".randomizeRow5").html(K(".randomizeRow5 .randomizedBlock").sort(function(){
-		    return Math.random()-0.5;
-		}));
-		K(".randomizeRow6").html(K(".randomizeRow6 .randomizedBlock").sort(function(){
-		    return Math.random()-0.5;
-		}));
+		var cw = K('.section > div').width();
+		K('.section > div').css({
+		    'height': cw + 'px'
+		});
 */
 		
-		K(".block").hover(function(){
-		   K(this).addClass("hover");
-		},
-		function(){
-		  var self = this;
-		  setTimeout(function() {
-		         K(self).removeClass('hover');
-		  },500);
+		K(".col").hover(function(){
+			K(this).addClass("hover");
+			var self = this;
+			setTimeout(function() {
+		    K(self).removeClass('hover');
+			K(self).addClass("hover2");
+			}, 100);
+			setTimeout(function() {
+		    K(self).removeClass('hover2');
+			K(self).addClass("hover3");
+			}, 200);
+			setTimeout(function() {
+		    K(self).removeClass('hover3');
+			K(self).addClass("hover4");
+			}, 300);
+			setTimeout(function() {
+		    K(self).removeClass('hover4');
+			K(self).addClass("hover5");
+			}, 400);
+			setTimeout(function() {
+		    K(self).removeClass('hover5');
+			}, 500);
 		});
-		
-		
-		K(".link_block").hover(function(){
-		   K(this).addClass("hover");
-		},
-		function(){
-		  var self = this;
-		  setTimeout(function() {
-		         K(self).removeClass('hover');
-		  },500);
-		});
-		
+
 		
 		K("#typed").typed({
-		strings: ["Hi, I'm Asaph"],
+		strings: ["Hi, I'm Asaph!"],
 		typeSpeed: 30
       	});
       	
@@ -75,19 +64,35 @@
 
 		
 		K( "#typed2" ).addClass('animated fadeOut');
+		K( "#typed" ).addClass('animated fadeOut');
 		K( "#stuff" ).addClass('animated fadeOut');
 		
 		setTimeout(function(){
-		  K('#typed2').replaceWith("<p id='titles'>Developer  &#92; &#92;   Blogger  &#92; &#92;   Musician</p>"
+		  K('#typed2').replaceWith("<p class='animated fadeIn' id='titles'>Developer  &#92; &#92;   Blogger  &#92; &#92;   Musician</p>"
 );
-		}, 6400);
+		}, 6900);
 		setTimeout(function(){
-		  K('#stuff').remove();
-		}, 6400);
+		  K('#typed').replaceWith("<p class='animated bounceInDown' id='asaphyuan'>Asaph Yuan</p>"
+);
+		}, 5500);
 	});
+
+	var K = jQuery.noConflict();
+	K(window).ready(updateHeight);
+	K(window).resize(updateHeight);
 	
-			
-		
+	function updateHeight()
+	{
+	    var div = K('#dynamicheight1');
+	    var width = div.width();
+	    
+	    K( ".col" ).each(function() {
+		    K( this ).css('height', width);
+		});
+	}	
+	
+	
+	
 	function checkHome(){ 
 		var K = jQuery.noConflict();
 		K('#st-panel-1').attr('checked',true);
