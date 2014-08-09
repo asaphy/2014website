@@ -9,8 +9,10 @@
     <link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" href="slidorion.css" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	<script src="scripts/jquery-1.11.1.min.js"></script>
 	<script src="scripts/typed.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
@@ -476,8 +478,8 @@
 						<div class="st-deco" data-icon="H"></div>
 						
 					  	
-						<h1 id="hi">Hi, I'm <span class="colormered">Asaph</span>. I make things.</h1>
-					  	
+						<h1 class="heading" id="aboutmetitle">About Me</h1>
+				
 					  	<div class="section group">
 							<div class="col2">
 							
@@ -489,7 +491,6 @@
 									<li>My bedroom has 2 keyboards and 2 guitars and a smiley face made out of <span class="colormered">28 postcards</span>.</li>
 									<li>I may be crazy, but I wouldn't mind living on <span class="colormered">bread and water</span>. As long as the bread is fresh and the water's from spring.</li>
 									<li>Pets my family has had: goldfish, minnows, beta fish, lizards, a millipede, hamsters, guinea pigs, finches, and a dog - only the <span class="colormered">dog</span> is still alive :P</li>
-									<li>I love <span class="colormered">God</span>.</li>
 								</ul>
 								
 								<h2>I Know:</h2>
@@ -520,7 +521,6 @@ girl named, hah, made your heart skip for a sec :)</li>
 									<li>My bedroom has two keyboards and two guitars and a smiley face made out of 28 postcards.</li>
 									<li>I may be crazy, but I wouldn't mind living on bread and water. As long as the bread is fresh and the water's from spring.</li>
 									<li>Pets: goldfish, minnows, beta fish, lizards, a millipede, hamsters, guinea pigs, finches, and a dog - Only the dog is still alive :P</li>
-									<li>I love God.</li>
 								</ul>
 								
 								<h2>I Believe:</h2>
@@ -539,32 +539,57 @@ girl named, hah, made your heart skip for a sec :)</li>
 
 						
 			</section>
-					
+
+
 			<section class="st-panel st-color" id="st-panel-3">
 						<div class="st-deco" data-icon="2"></div>
-						<h2>Projects</h2>
-						<p>My past projects.</p>
+						<h1 class="heading">Projects</h1>
+						<div id="slidorion" class="slidorion">
+							<div class="slider">
+								<div class="slide"><img src="img/ptf.jpg" /></div>
+								<div class="slide"><img src="img/globalappathon.jpg" /></div>
+								<div class="slide"><img src="img/productify.jpg" /></div>
+							</div>
+					
+							<div class="accordion">
+								<div class="header">Plymouth Taskforce for the Homeless App</div>
+								<div class="content">
+									<p>The PTH app serves as a mobile calendar for Plymouth Taskforce for the Homeless. It also contains a map with the locations of the church shelters, a registration page, general information, and contact information. This app is for volunteers of Plymouth Taskforce for the Homeless.</p>
+									<p>I was the Lead Project Manager of this team from Global App Initiative.</p><p>Check it out here:</p>
+								</div>
+								<div class="header">Global Appathon Website</div>
+								<div class="content">
+									<p>The Global Appathon Website is used to promote the annual Global Appathon. This app-focused hackathon is hosted by Global App Initiative every Spring at Boston University.</p>
+									<p>Check it out here!</p>
+								</div>
+								<div class="header">Productify</div>
+								<div class="content">
+									<p>Productify is a Chrome extension Ivan Uvarov and I made during the 2014 HackBeanpot Hackathon. It allows users to tracks the time they spend on different categories of the website and presents this information to users in various forms including a pie graph with daily statistics, bubble graph with weekly statistics etc. It also allows users to set limits for the time they spend on certain categories. When the limit is reached, the extension automatically blocks websites of this specific category. Furthermore, it allows users to enter distraction-free mode, where the extension blocks time-consuming website, such as social networks. So, it solves one of the biggest college students' problem, allowing them to spend time on the web more productively. We won the Best Quantified Self Hack Prize!</p>
+								</div>
+							</div>
+						</div>
 			</section>
 					
 			<section class="st-panel" id="st-panel-4">
 						<div class="st-deco" data-icon="B"></div>
-						<h2>Blog</h2>
+						<h1 class="heading">Blog</h1>
 						<p>Blogs I've blogged.</p>
 			</section>
 					
 			<section class="st-panel st-color" id="st-panel-5">
 						<div class="st-deco" data-icon="x"></div>
-						<h2>Music</h2>
-						<p>Music I've made</p>
+						<h1 class="heading">Music</h1>
+						<h1 class="musicnewstuff">New Stuff Coming Soon!</h1>
 			</section>
 					
 			<section class="st-panel" id="st-panel-6">
 						<div class="st-deco" data-icon="Ç"></div>
-						<h2>Photo</h2>
-						<p>Photos I take.</p>
+						<h1 class="heading">Photography</h1>
 			</section>
 	        
 	        <section class="st-panel st-color" id="st-panel-7">
+	        			<h1 class="heading">Hall of Fame</h1>
+
 	            <h2>Be My BFF:</h2>
 								<div id="social-media-links">
 									<a target="_blank" href="http://twitter.com/asaphyuan" id="twitter-link"></a>
@@ -577,7 +602,8 @@ girl named, hah, made your heart skip for a sec :)</li>
 	     
 		</div><!-- // st-container -->
 	    </div><!--end of tablet -->
-
+		<script src="scripts/jquery.easing.js"></script>
+		<script src="scripts/jquery.slidorion.min.js"></script>
   </body>
 
 </html>

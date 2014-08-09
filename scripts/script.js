@@ -1,13 +1,9 @@
 $(document).ready(function(){
 		var K = jQuery.noConflict();
 
-		
-/*
-		var cw = K('.section > div').width();
-		K('.section > div').css({
-		    'height': cw + 'px'
+		K('#slidorion').slidorion({
+			autoPlay: false
 		});
-*/
 
 		K('#whatidotab').hide(); //
 		K('#whoiam').addClass("active_tab");
@@ -25,6 +21,7 @@ $(document).ready(function(){
 		   	K('#whatido').removeClass("active_tab");
 		});
 		
+
 		
 		K(".col").hover(function(){
 			K(this).addClass("hover");
@@ -70,15 +67,7 @@ $(document).ready(function(){
 	        loopCount: false, // number of loops, false = infinite
 	    });
       	K( ".typed-cursor" ).replaceWith( "" );
-      	
-/*
-      	K("#God").typed({
-		strings: ["^5700out!"],
-		typeSpeed: 30
-      	});
-      	K( ".typed-cursor" ).replaceWith( "" );
-*/
-
+	  	
 		
 		K( "#typed2" ).addClass('animated fadeOut');
 		K( "#typed" ).addClass('animated fadeOut');
@@ -153,6 +142,14 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-o-transform": "translateY(-100%)"});
 		L('.st-scroll').css({"-ms-transform": "translateY(-100%)"});
 		L('.st-scroll').css({"transform": "translateY(-100%)"});
+		
+		L( "#aboutmetitle" ).addClass('animated fadeInDownBig');
+
+		setTimeout(function() {
+		    	L( ".col2" ).addClass('visible animated bounceInLeft');
+				L( ".col2-2" ).addClass('visible animated bounceInRight');
+			}, 800);
+
 
 		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
@@ -229,6 +226,7 @@ $(document).ready(function(){
 	
 	function checkProjects(){ 
 		var K = jQuery.noConflict();
+		K('#st-control-2link').css("background-image", "url('img/nav/aboutmeblack.png')");
 		K('#st-panel-3').attr('checked',true);
 		var L = jQuery.noConflict();
 		L('.st-scroll').css({"-webkit-transform": "translateY(-200%)"});
@@ -237,7 +235,7 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-200%)"});
 		L('.st-scroll').css({"transform": "translateY(-200%)"});
 				
-				var M = jQuery.noConflict();
+		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
 		M('#st-control-1').css("top", "0");
 		M('#st-control-1link').css("top", "0");
@@ -249,7 +247,6 @@ $(document).ready(function(){
 		M('#st-control-1link').css("left", "0");
 		
 		M('#st-control-2').css("top", "50px");
-		M('#st-control-2link').css("background-image", "url('img/nav/aboutmeblack.png')");
 		M('#st-control-2link').css("top", "50px");
 		M('#st-control-2').css("left", "0");
 		M('#st-control-2link').css("width", "50px");
@@ -319,7 +316,7 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-300%)"});
 		L('.st-scroll').css({"transform": "translateY(-300%)"});
 		
-				var M = jQuery.noConflict();
+		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
 		M('#st-control-1').css("top", "0");
 		M('#st-control-1link').css("top", "0");
@@ -401,7 +398,7 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-400%)"});
 		L('.st-scroll').css({"transform": "translateY(-400%)"});
 				
-				var M = jQuery.noConflict();
+		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
 		M('#st-control-1').css("top", "0");
 		M('#st-control-1link').css("top", "0");
@@ -483,7 +480,7 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-500%)"});
 		L('.st-scroll').css({"transform": "translateY(-500%)"});
 				
-				var M = jQuery.noConflict();
+		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
 		M('#st-control-1').css("top", "0");
 		M('#st-control-1link').css("top", "0");
@@ -565,7 +562,7 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-600%)"});
 		L('.st-scroll').css({"transform": "translateY(-600%)"});
 				
-				var M = jQuery.noConflict();
+		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
 		M('#st-control-1').css("top", "0");
 		M('#st-control-1link').css("top", "0");

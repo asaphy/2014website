@@ -7,10 +7,28 @@ body{
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 }
+
 #hi{
 	margin-left: 10%;
 	font-size: 48px;
 	font-weight: 100;
+}
+
+.heading{
+	margin-left: 20%;
+	color: white;
+	font-size: 56px;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+}
+
+.musicnewstuff{
+	margin-left: 20%;
+	margin-top: 20%;
+	color: white;
+	font-size: 56px;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
 }
 
 #asaphyuan {
@@ -36,11 +54,6 @@ body{
 
 .hover5 {
 	background: #1F1F1F;
-}
-
-
-#st-panel-3 {
-	background-image: url('img/ptf.jpg');
 }
 
 #next {
@@ -216,11 +229,6 @@ a{
 }
  
 
-
-#st-panel-2, #st-panel-3, #st-panel-4, #st-panel-5, #st-panel-6, #st-panel-7 {
-
-}
-
 .moveLeft{
 	padding-right: 0px;
 }
@@ -281,6 +289,32 @@ a{
     overflow: hidden;
 } 
 
+#st-panel-3{
+    background: #3D3D3D;
+    overflow: hidden;
+    color: black;
+} 
+
+#st-panel-4{
+    background: #5C5C5C;
+    overflow: hidden;
+} 
+
+#st-panel-5{
+    background: #787878;
+    overflow: hidden;
+} 
+
+#st-panel-6{
+    background: #919191;
+    overflow: hidden;
+} 
+
+#st-panel-7{
+    background: #ABABAB;
+    overflow: hidden;
+} 
+
 .block {
 	width: 96px;
 	height: 96px;
@@ -331,7 +365,7 @@ a{
 	width: 10%;
 }
 .col2 {
-	display: block;
+	display: none;
 	overflow: hidden;
 	float:left;
 	padding-left: 10%;
@@ -344,7 +378,7 @@ a{
 }
 
 .col2-2{
-	display: block;
+	display: none;
 	overflow: hidden;
 	float:left;
 	margin: 0% 0 0% 0%;
@@ -503,6 +537,9 @@ a{
 	height: 80px
 }
 
+.visible{
+	display: block;
+}
 
 @media only screen and (max-width: 949px) {
 	#hiimasaph {
