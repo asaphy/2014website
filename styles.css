@@ -3,9 +3,14 @@ body{
 	background: #ddd;
 	font-weight: 400;
 	font-size: 15px;
-	color: grey;
+	color: #FFF;
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
+}
+#hi{
+	margin-left: 10%;
+	font-size: 48px;
+	font-weight: 100;
 }
 
 #asaphyuan {
@@ -101,11 +106,16 @@ body{
 }
 
 #social-media-links {
-     position: absolute;
-     top: 0px;
-     right: 0%;
-     width:56px;; /* width of the menu div */    
-     z-index: 999999;
+     width:224px;; /* width of the menu div */
+}
+
+#whoiam, #whatido {
+	float: left;
+	color: white;
+	width: 250px;
+	font-size: 32px;
+	text-align: center;
+	height: 80px
 }
 #social-media-links a{
 	 height: 56px;
@@ -197,6 +207,7 @@ a{
     font-size: 16px;
     height: 34px;
     line-height: 34px;
+    z-index: 100;
 }
  
 .st-container > input {
@@ -204,18 +215,10 @@ a{
     z-index: 1000;
 }
  
-.st-container > a {
-    z-index: 10;
-    font-weight: 700;
-    background-color:rgba(70,70,70,1);
-    color: #fff;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-}
+
 
 #st-panel-2, #st-panel-3, #st-panel-4, #st-panel-5, #st-panel-6, #st-panel-7 {
-	margin: auto;
-	width: 80%;	
+
 }
 
 .moveLeft{
@@ -223,6 +226,7 @@ a{
 }
 
 #st-control-1, #st-control-1 + a {
+	position: fixed;
     left: -100%;
 }
  
@@ -250,14 +254,6 @@ a{
     left: -185%;
 }
 
-.st-container > input:hover + a{
-    background: #9e9e9e;
-}
- 
-.st-container > input:hover + a:after {
-    border-bottom-color: #9e9e9e;
-}
-
 .st-scroll,
 .st-panel {
     position: relative;
@@ -276,10 +272,14 @@ a{
 }
  
 .st-panel{
-    background: #d3d3d3;
+    background: #f3f3f3;
     overflow: hidden;
 } 
 
+#st-panel-2{
+    background: #1F1F1F;
+    overflow: hidden;
+} 
 
 .block {
 	width: 96px;
@@ -316,6 +316,10 @@ a{
 	margin: 0px;
 }
 
+.colormered{
+	color: #00BFFF;
+/* 	color: rgb(169, 43,43); */
+}
 
 /*  COLUMN SETUP  */
 .col {
@@ -326,8 +330,33 @@ a{
 	position: relative;
 	width: 10%;
 }
+.col2 {
+	display: block;
+	overflow: hidden;
+	float:left;
+	padding-left: 10%;
+	position: relative;
+	width: 60%;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: #FFF;
+	font-weight: 500;
+}
+
+.col2-2{
+	display: block;
+	overflow: hidden;
+	float:left;
+	margin: 0% 0 0% 0%;
+	position: relative;
+	width: 40%;
+}
 .col:first-child { margin-left: 0; }
 
+
+#badscale{
+	margin-left: 20%;
+}
 
 /*  GROUPING  */
 .group:before,
@@ -440,6 +469,41 @@ a{
 	.largeDesktop{display:block;}
 }
 */
+
+.active_tab{
+	background: #707070;
+	-moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+}
+
+.inactive_tab{
+	background: #707070;
+}
+
+#tabs{
+	display: none;
+	padding-left: 100px;
+}
+
+#tabs >  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%
+}
+
+#whoiam, #whatido {
+	float: left;
+	color: white;
+	width: 250px;
+	font-size: 32px;
+	text-align: center;
+	height: 80px
+}
+
+
 @media only screen and (max-width: 949px) {
 	#hiimasaph {
 	     right: 0;
@@ -450,6 +514,18 @@ a{
 	#hiimasaph {
 	     right: 0;
 	     left: 10%;
+	}
+}
+
+@media only screen and (max-width: 899px) {
+	.col2-2 {
+	     display: none;
+	}
+	.col2 {
+		display: none;
+	}
+	#tabs{
+		display: block;
 	}
 }
 

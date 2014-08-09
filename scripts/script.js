@@ -8,6 +8,23 @@ $(document).ready(function(){
 		    'height': cw + 'px'
 		});
 */
+
+		K('#whatidotab').hide(); //
+		K('#whoiam').addClass("active_tab");
+		K('#whatido').addClass("inactive_tab");
+		K('#whatido').click(function(){
+		   	K('#whoiamtab').hide(); //
+		   	K('#whatidotab').show();
+		   	K('#whatido').addClass("active_tab");
+		   	K('#whoiam').removeClass("active_tab");
+		});
+		K('#whoiam').click(function(){
+		   	K('#whatidotab').hide(); //
+		   	K('#whoiamtab').show();
+		   	K('#whoiam').addClass("active_tab");
+		   	K('#whatido').removeClass("active_tab");
+		});
+		
 		
 		K(".col").hover(function(){
 			K(this).addClass("hover");
@@ -138,39 +155,75 @@ $(document).ready(function(){
 		L('.st-scroll').css({"transform": "translateY(-100%)"});
 
 		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "10%");
-		M('#st-control-1link').css("width", "11.4%");
-		M('#st-control-1link').css("left", "10%");
+		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
+		M('#st-control-1').css("top", "0");
+		M('#st-control-1link').css("top", "0");
+		M('#st-control-1').css("left", "0");
+		M('#st-control-1link').css("width", "50px");
+		M('#st-control-1link').css("height", "50px");
+		M('#st-control-1').css("width", "50px");
+		M('#st-control-1').css("height", "50px");
+		M('#st-control-1link').css("left", "0");
 		
-		M('#st-control-2').css("left", "21.4%");
-		M('#st-control-2link').css("width", "11.4%");
-		M('#st-control-2link').css("left", "21.4%");
-		M('#st-control-2link').css("color", "#4FD5D6");
+		M('#st-control-2').css("top", "50px");
+		M('#st-control-2link').css("background-image", "url('img/nav/aboutmered.png')");
+		M('#st-control-2link').css("top", "50px");
+		M('#st-control-2').css("left", "0");
+		M('#st-control-2link').css("width", "50px");
+		M('#st-control-2link').css("height", "50px");
+		M('#st-control-2').css("width", "50px");
+		M('#st-control-2').css("height", "50px");
+		M('#st-control-2link').css("left", "0");
 	
-		M('#st-control-3').css("left", "32.8%");
-		M('#st-control-3link').css("width", "11.4%");
-		M('#st-control-3link').css("left", "32.8%");
-		M('#st-control-3link').css("color", "#FFF");
+		M('#st-control-3').css("top", "100px");
+		M('#st-control-3link').css("background-image", "url('img/nav/pastprojectsblack.png')");
+		M('#st-control-3link').css("top", "100px");
+		M('#st-control-3').css("left", "0");
+		M('#st-control-3link').css("width", "50px");
+		M('#st-control-3link').css("height", "50px");
+		M('#st-control-3').css("width", "50px");
+		M('#st-control-3').css("height", "50px");
+		M('#st-control-3link').css("left", "0");
 		
-		M('#st-control-4').css("left", "44.2%");
-		M('#st-control-4link').css("width", "11.4%");
-		M('#st-control-4link').css("left", "44.2%");
-		M('#st-control-4link').css("color", "#FFF");
+		M('#st-control-4').css("top", "150px");
+		M('#st-control-4link').css("background-image", "url('img/nav/blogblack.png')");
+		M('#st-control-4link').css("top", "150px");
+		M('#st-control-4').css("left", "0");
+		M('#st-control-4link').css("width", "50px");
+		M('#st-control-4link').css("height", "50px");
+		M('#st-control-4link').css("left", "0");
+		M('#st-control-4').css("width", "50px");
+		M('#st-control-4').css("height", "50px");
 		
-		M('#st-control-5').css("left", "55.6%");
-		M('#st-control-5link').css("width", "11.4%");
-		M('#st-control-5link').css("left", "55.6%");
-		M('#st-control-5link').css("color", "#FFF");
+		M('#st-control-5').css("top", "200px");
+		M('#st-control-5link').css("background-image", "url('img/nav/musicblack.png')");
+		M('#st-control-5link').css("top", "200px");
+		M('#st-control-5').css("left", "0");
+		M('#st-control-5link').css("width", "50px");
+		M('#st-control-5link').css("height", "50px");
+		M('#st-control-5link').css("left", "0");
+		M('#st-control-5').css("width", "50px");
+		M('#st-control-5').css("height", "50px");
 		
-		M('#st-control-6').css("left", "67%");
-		M('#st-control-6link').css("width", "11.4%");
-		M('#st-control-6link').css("left", "67%");
-		M('#st-control-6link').css("color", "#FFF");
+		M('#st-control-6').css("top", "250px");
+		M('#st-control-6link').css("background-image", "url('img/nav/photographyblack.png')");
+		M('#st-control-6link').css("top", "250px");
+		M('#st-control-6').css("left", "0");
+		M('#st-control-6link').css("width", "50px");
+		M('#st-control-6link').css("height", "50px");
+		M('#st-control-6link').css("left", "0");
+		M('#st-control-6').css("width", "50px");
+		M('#st-control-6').css("height", "50px");
 		
-		M('#st-control-7').css("left", "78.4%");
-		M('#st-control-7link').css("width", "11.6%");
-		M('#st-control-7link').css("left", "78.4%");
-		M('#st-control-7link').css("color", "#FFF");
+		M('#st-control-7').css("top", "300px");
+		M('#st-control-7link').css("background-image", "url('img/nav/halloffameblack.png')");
+		M('#st-control-7link').css("top", "300px");
+		M('#st-control-7').css("left", "0");
+		M('#st-control-7link').css("width", "50px");
+		M('#st-control-7link').css("height", "50px");
+		M('#st-control-7link').css("left", "0");
+		M('#st-control-7').css("width", "50px");
+		M('#st-control-7').css("height", "50px");
 	}
 
 	
@@ -184,40 +237,76 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-200%)"});
 		L('.st-scroll').css({"transform": "translateY(-200%)"});
 				
-		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "10%");
-		M('#st-control-1link').css("width", "11.4%");
-		M('#st-control-1link').css("left", "10%");
+				var M = jQuery.noConflict();
+		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
+		M('#st-control-1').css("top", "0");
+		M('#st-control-1link').css("top", "0");
+		M('#st-control-1').css("left", "0");
+		M('#st-control-1link').css("width", "50px");
+		M('#st-control-1link').css("height", "50px");
+		M('#st-control-1').css("width", "50px");
+		M('#st-control-1').css("height", "50px");
+		M('#st-control-1link').css("left", "0");
 		
-		M('#st-control-2').css("left", "21.4%");
-		M('#st-control-2link').css("width", "11.4%");
-		M('#st-control-2link').css("left", "21.4%");
-		M('#st-control-2link').css("color", "#FFF");
+		M('#st-control-2').css("top", "50px");
+		M('#st-control-2link').css("background-image", "url('img/nav/aboutmeblack.png')");
+		M('#st-control-2link').css("top", "50px");
+		M('#st-control-2').css("left", "0");
+		M('#st-control-2link').css("width", "50px");
+		M('#st-control-2link').css("height", "50px");
+		M('#st-control-2').css("width", "50px");
+		M('#st-control-2').css("height", "50px");
+		M('#st-control-2link').css("left", "0");
 	
-		M('#st-control-3').css("left", "32.8%");
-		M('#st-control-3link').css("width", "11.4%");
-		M('#st-control-3link').css("left", "32.8%");
-		M('#st-control-3link').css("color", "#4FD5D6");
+		M('#st-control-3').css("top", "100px");
+		M('#st-control-3link').css("background-image", "url('img/nav/pastprojectsred.png')");
+		M('#st-control-3link').css("top", "100px");
+		M('#st-control-3').css("left", "0");
+		M('#st-control-3link').css("width", "50px");
+		M('#st-control-3link').css("height", "50px");
+		M('#st-control-3').css("width", "50px");
+		M('#st-control-3').css("height", "50px");
+		M('#st-control-3link').css("left", "0");
 		
-		M('#st-control-4').css("left", "44.2%");
-		M('#st-control-4link').css("width", "11.4%");
-		M('#st-control-4link').css("left", "44.2%");
-		M('#st-control-4link').css("color", "#FFF");
+		M('#st-control-4').css("top", "150px");
+		M('#st-control-4link').css("background-image", "url('img/nav/blogblack.png')");
+		M('#st-control-4link').css("top", "150px");
+		M('#st-control-4').css("left", "0");
+		M('#st-control-4link').css("width", "50px");
+		M('#st-control-4link').css("height", "50px");
+		M('#st-control-4link').css("left", "0");
+		M('#st-control-4').css("width", "50px");
+		M('#st-control-4').css("height", "50px");
 		
-		M('#st-control-5').css("left", "55.6%");
-		M('#st-control-5link').css("width", "11.4%");
-		M('#st-control-5link').css("left", "55.6%");
-		M('#st-control-5link').css("color", "#FFF");
+		M('#st-control-5').css("top", "200px");
+		M('#st-control-5link').css("background-image", "url('img/nav/musicblack.png')");
+		M('#st-control-5link').css("top", "200px");
+		M('#st-control-5').css("left", "0");
+		M('#st-control-5link').css("width", "50px");
+		M('#st-control-5link').css("height", "50px");
+		M('#st-control-5link').css("left", "0");
+		M('#st-control-5').css("width", "50px");
+		M('#st-control-5').css("height", "50px");
 		
-		M('#st-control-6').css("left", "67%");
-		M('#st-control-6link').css("width", "11.4%");
-		M('#st-control-6link').css("left", "67%");
-		M('#st-control-6link').css("color", "#FFF");
+		M('#st-control-6').css("top", "250px");
+		M('#st-control-6link').css("background-image", "url('img/nav/photographyblack.png')");
+		M('#st-control-6link').css("top", "250px");
+		M('#st-control-6').css("left", "0");
+		M('#st-control-6link').css("width", "50px");
+		M('#st-control-6link').css("height", "50px");
+		M('#st-control-6link').css("left", "0");
+		M('#st-control-6').css("width", "50px");
+		M('#st-control-6').css("height", "50px");
 		
-		M('#st-control-7').css("left", "78.4%");
-		M('#st-control-7link').css("width", "11.6%");
-		M('#st-control-7link').css("left", "78.4%");
-		M('#st-control-7link').css("color", "#FFF");
+		M('#st-control-7').css("top", "300px");
+		M('#st-control-7link').css("background-image", "url('img/nav/halloffameblack.png')");
+		M('#st-control-7link').css("top", "300px");
+		M('#st-control-7').css("left", "0");
+		M('#st-control-7link').css("width", "50px");
+		M('#st-control-7link').css("height", "50px");
+		M('#st-control-7link').css("left", "0");
+		M('#st-control-7').css("width", "50px");
+		M('#st-control-7').css("height", "50px");
 	}
 	
 	function checkBlog(){ 
@@ -230,40 +319,76 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-300%)"});
 		L('.st-scroll').css({"transform": "translateY(-300%)"});
 		
-		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "10%");
-		M('#st-control-1link').css("width", "11.4%");
-		M('#st-control-1link').css("left", "10%");
+				var M = jQuery.noConflict();
+		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
+		M('#st-control-1').css("top", "0");
+		M('#st-control-1link').css("top", "0");
+		M('#st-control-1').css("left", "0");
+		M('#st-control-1link').css("width", "50px");
+		M('#st-control-1link').css("height", "50px");
+		M('#st-control-1').css("width", "50px");
+		M('#st-control-1').css("height", "50px");
+		M('#st-control-1link').css("left", "0");
 		
-		M('#st-control-2').css("left", "21.4%");
-		M('#st-control-2link').css("width", "11.4%");
-		M('#st-control-2link').css("left", "21.4%");
-		M('#st-control-2link').css("color", "#FFF");
+		M('#st-control-2').css("top", "50px");
+		M('#st-control-2link').css("background-image", "url('img/nav/aboutmeblack.png')");
+		M('#st-control-2link').css("top", "50px");
+		M('#st-control-2').css("left", "0");
+		M('#st-control-2link').css("width", "50px");
+		M('#st-control-2link').css("height", "50px");
+		M('#st-control-2').css("width", "50px");
+		M('#st-control-2').css("height", "50px");
+		M('#st-control-2link').css("left", "0");
 	
-		M('#st-control-3').css("left", "32.8%");
-		M('#st-control-3link').css("width", "11.4%");
-		M('#st-control-3link').css("left", "32.8%");
-		M('#st-control-3link').css("color", "#FFF");
+		M('#st-control-3').css("top", "100px");
+		M('#st-control-3link').css("background-image", "url('img/nav/pastprojectsblack.png')");
+		M('#st-control-3link').css("top", "100px");
+		M('#st-control-3').css("left", "0");
+		M('#st-control-3link').css("width", "50px");
+		M('#st-control-3link').css("height", "50px");
+		M('#st-control-3').css("width", "50px");
+		M('#st-control-3').css("height", "50px");
+		M('#st-control-3link').css("left", "0");
 		
-		M('#st-control-4').css("left", "44.2%");
-		M('#st-control-4link').css("width", "11.4%");
-		M('#st-control-4link').css("left", "44.2%");
-		M('#st-control-4link').css("color", "#4FD5D6");
+		M('#st-control-4').css("top", "150px");
+		M('#st-control-4link').css("background-image", "url('img/nav/blogred.png')");
+		M('#st-control-4link').css("top", "150px");
+		M('#st-control-4').css("left", "0");
+		M('#st-control-4link').css("width", "50px");
+		M('#st-control-4link').css("height", "50px");
+		M('#st-control-4link').css("left", "0");
+		M('#st-control-4').css("width", "50px");
+		M('#st-control-4').css("height", "50px");
 		
-		M('#st-control-5').css("left", "55.6%");
-		M('#st-control-5link').css("width", "11.4%");
-		M('#st-control-5link').css("left", "55.6%");
-		M('#st-control-5link').css("color", "#FFF");
+		M('#st-control-5').css("top", "200px");
+		M('#st-control-5link').css("background-image", "url('img/nav/musicblack.png')");
+		M('#st-control-5link').css("top", "200px");
+		M('#st-control-5').css("left", "0");
+		M('#st-control-5link').css("width", "50px");
+		M('#st-control-5link').css("height", "50px");
+		M('#st-control-5link').css("left", "0");
+		M('#st-control-5').css("width", "50px");
+		M('#st-control-5').css("height", "50px");
 		
-		M('#st-control-6').css("left", "67%");
-		M('#st-control-6link').css("width", "11.4%");
-		M('#st-control-6link').css("left", "67%");
-		M('#st-control-6link').css("color", "#FFF");
+		M('#st-control-6').css("top", "250px");
+		M('#st-control-6link').css("background-image", "url('img/nav/photographyblack.png')");
+		M('#st-control-6link').css("top", "250px");
+		M('#st-control-6').css("left", "0");
+		M('#st-control-6link').css("width", "50px");
+		M('#st-control-6link').css("height", "50px");
+		M('#st-control-6link').css("left", "0");
+		M('#st-control-6').css("width", "50px");
+		M('#st-control-6').css("height", "50px");
 		
-		M('#st-control-7').css("left", "78.4%");
-		M('#st-control-7link').css("width", "11.6%");
-		M('#st-control-7link').css("left", "78.4%");
-		M('#st-control-7link').css("color", "#FFF");
+		M('#st-control-7').css("top", "300px");
+		M('#st-control-7link').css("background-image", "url('img/nav/halloffameblack.png')");
+		M('#st-control-7link').css("top", "300px");
+		M('#st-control-7').css("left", "0");
+		M('#st-control-7link').css("width", "50px");
+		M('#st-control-7link').css("height", "50px");
+		M('#st-control-7link').css("left", "0");
+		M('#st-control-7').css("width", "50px");
+		M('#st-control-7').css("height", "50px");
 	}
 	
 	function checkMusic(){ 
@@ -276,40 +401,76 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-400%)"});
 		L('.st-scroll').css({"transform": "translateY(-400%)"});
 				
-		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "10%");
-		M('#st-control-1link').css("width", "11.4%");
-		M('#st-control-1link').css("left", "10%");
+				var M = jQuery.noConflict();
+		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
+		M('#st-control-1').css("top", "0");
+		M('#st-control-1link').css("top", "0");
+		M('#st-control-1').css("left", "0");
+		M('#st-control-1link').css("width", "50px");
+		M('#st-control-1link').css("height", "50px");
+		M('#st-control-1').css("width", "50px");
+		M('#st-control-1').css("height", "50px");
+		M('#st-control-1link').css("left", "0");
 		
-		M('#st-control-2').css("left", "21.4%");
-		M('#st-control-2link').css("width", "11.4%");
-		M('#st-control-2link').css("left", "21.4%");
-		M('#st-control-2link').css("color", "#FFF");
+		M('#st-control-2').css("top", "50px");
+		M('#st-control-2link').css("background-image", "url('img/nav/aboutmeblack.png')");
+		M('#st-control-2link').css("top", "50px");
+		M('#st-control-2').css("left", "0");
+		M('#st-control-2link').css("width", "50px");
+		M('#st-control-2link').css("height", "50px");
+		M('#st-control-2').css("width", "50px");
+		M('#st-control-2').css("height", "50px");
+		M('#st-control-2link').css("left", "0");
 	
-		M('#st-control-3').css("left", "32.8%");
-		M('#st-control-3link').css("width", "11.4%");
-		M('#st-control-3link').css("left", "32.8%");
-		M('#st-control-3link').css("color", "#FFF");
+		M('#st-control-3').css("top", "100px");
+		M('#st-control-3link').css("background-image", "url('img/nav/pastprojectsblack.png')");
+		M('#st-control-3link').css("top", "100px");
+		M('#st-control-3').css("left", "0");
+		M('#st-control-3link').css("width", "50px");
+		M('#st-control-3link').css("height", "50px");
+		M('#st-control-3').css("width", "50px");
+		M('#st-control-3').css("height", "50px");
+		M('#st-control-3link').css("left", "0");
 		
-		M('#st-control-4').css("left", "44.2%");
-		M('#st-control-4link').css("width", "11.4%");
-		M('#st-control-4link').css("left", "44.2%");
-		M('#st-control-4link').css("color", "#FFF");
+		M('#st-control-4').css("top", "150px");
+		M('#st-control-4link').css("background-image", "url('img/nav/blogblack.png')");
+		M('#st-control-4link').css("top", "150px");
+		M('#st-control-4').css("left", "0");
+		M('#st-control-4link').css("width", "50px");
+		M('#st-control-4link').css("height", "50px");
+		M('#st-control-4link').css("left", "0");
+		M('#st-control-4').css("width", "50px");
+		M('#st-control-4').css("height", "50px");
 		
-		M('#st-control-5').css("left", "55.6%");
-		M('#st-control-5link').css("width", "11.4%");
-		M('#st-control-5link').css("left", "55.6%");
-		M('#st-control-5link').css("color", "#4FD5D6");
+		M('#st-control-5').css("top", "200px");
+		M('#st-control-5link').css("background-image", "url('img/nav/musicred.png')");
+		M('#st-control-5link').css("top", "200px");
+		M('#st-control-5').css("left", "0");
+		M('#st-control-5link').css("width", "50px");
+		M('#st-control-5link').css("height", "50px");
+		M('#st-control-5link').css("left", "0");
+		M('#st-control-5').css("width", "50px");
+		M('#st-control-5').css("height", "50px");
 		
-		M('#st-control-6').css("left", "67%");
-		M('#st-control-6link').css("width", "11.4%");
-		M('#st-control-6link').css("left", "67%");
-		M('#st-control-6link').css("color", "#FFF");
+		M('#st-control-6').css("top", "250px");
+		M('#st-control-6link').css("background-image", "url('img/nav/photographyblack.png')");
+		M('#st-control-6link').css("top", "250px");
+		M('#st-control-6').css("left", "0");
+		M('#st-control-6link').css("width", "50px");
+		M('#st-control-6link').css("height", "50px");
+		M('#st-control-6link').css("left", "0");
+		M('#st-control-6').css("width", "50px");
+		M('#st-control-6').css("height", "50px");
 		
-		M('#st-control-7').css("left", "78.4%");
-		M('#st-control-7link').css("width", "11.6%");
-		M('#st-control-7link').css("left", "78.4%");
-		M('#st-control-7link').css("color", "#FFF");
+		M('#st-control-7').css("top", "300px");
+		M('#st-control-7link').css("background-image", "url('img/nav/halloffameblack.png')");
+		M('#st-control-7link').css("top", "300px");
+		M('#st-control-7').css("left", "0");
+		M('#st-control-7link').css("width", "50px");
+		M('#st-control-7link').css("height", "50px");
+		M('#st-control-7link').css("left", "0");
+		M('#st-control-7').css("width", "50px");
+		M('#st-control-7').css("height", "50px");
 	}
 	
 	function checkPhotography(){ 
@@ -322,40 +483,76 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-500%)"});
 		L('.st-scroll').css({"transform": "translateY(-500%)"});
 				
-		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "10%");
-		M('#st-control-1link').css("width", "11.4%");
-		M('#st-control-1link').css("left", "10%");
+				var M = jQuery.noConflict();
+		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
+		M('#st-control-1').css("top", "0");
+		M('#st-control-1link').css("top", "0");
+		M('#st-control-1').css("left", "0");
+		M('#st-control-1link').css("width", "50px");
+		M('#st-control-1link').css("height", "50px");
+		M('#st-control-1').css("width", "50px");
+		M('#st-control-1').css("height", "50px");
+		M('#st-control-1link').css("left", "0");
 		
-		M('#st-control-2').css("left", "21.4%");
-		M('#st-control-2link').css("width", "11.4%");
-		M('#st-control-2link').css("left", "21.4%");
-		M('#st-control-2link').css("color", "#FFF");
+		M('#st-control-2').css("top", "50px");
+		M('#st-control-2link').css("background-image", "url('img/nav/aboutmeblack.png')");
+		M('#st-control-2link').css("top", "50px");
+		M('#st-control-2').css("left", "0");
+		M('#st-control-2link').css("width", "50px");
+		M('#st-control-2link').css("height", "50px");
+		M('#st-control-2').css("width", "50px");
+		M('#st-control-2').css("height", "50px");
+		M('#st-control-2link').css("left", "0");
 	
-		M('#st-control-3').css("left", "32.8%");
-		M('#st-control-3link').css("width", "11.4%");
-		M('#st-control-3link').css("left", "32.8%");
-		M('#st-control-3link').css("color", "#FFF");
+		M('#st-control-3').css("top", "100px");
+		M('#st-control-3link').css("background-image", "url('img/nav/pastprojectsblack.png')");
+		M('#st-control-3link').css("top", "100px");
+		M('#st-control-3').css("left", "0");
+		M('#st-control-3link').css("width", "50px");
+		M('#st-control-3link').css("height", "50px");
+		M('#st-control-3').css("width", "50px");
+		M('#st-control-3').css("height", "50px");
+		M('#st-control-3link').css("left", "0");
 		
-		M('#st-control-4').css("left", "44.2%");
-		M('#st-control-4link').css("width", "11.4%");
-		M('#st-control-4link').css("left", "44.2%");
-		M('#st-control-4link').css("color", "#FFF");
+		M('#st-control-4').css("top", "150px");
+		M('#st-control-4link').css("background-image", "url('img/nav/blogblack.png')");
+		M('#st-control-4link').css("top", "150px");
+		M('#st-control-4').css("left", "0");
+		M('#st-control-4link').css("width", "50px");
+		M('#st-control-4link').css("height", "50px");
+		M('#st-control-4link').css("left", "0");
+		M('#st-control-4').css("width", "50px");
+		M('#st-control-4').css("height", "50px");
 		
-		M('#st-control-5').css("left", "55.6%");
-		M('#st-control-5link').css("width", "11.4%");
-		M('#st-control-5link').css("left", "55.6%");
-		M('#st-control-5link').css("color", "#FFF");
+		M('#st-control-5').css("top", "200px");
+		M('#st-control-5link').css("background-image", "url('img/nav/musicblack.png')");
+		M('#st-control-5link').css("top", "200px");
+		M('#st-control-5').css("left", "0");
+		M('#st-control-5link').css("width", "50px");
+		M('#st-control-5link').css("height", "50px");
+		M('#st-control-5link').css("left", "0");
+		M('#st-control-5').css("width", "50px");
+		M('#st-control-5').css("height", "50px");
 		
-		M('#st-control-6').css("left", "67%");
-		M('#st-control-6link').css("width", "11.4%");
-		M('#st-control-6link').css("left", "67%");
-		M('#st-control-6link').css("color", "#4FD5D6");
+		M('#st-control-6').css("top", "250px");
+		M('#st-control-6link').css("background-image", "url('img/nav/photographyred.png')");
+		M('#st-control-6link').css("top", "250px");
+		M('#st-control-6').css("left", "0");
+		M('#st-control-6link').css("width", "50px");
+		M('#st-control-6link').css("height", "50px");
+		M('#st-control-6link').css("left", "0");
+		M('#st-control-6').css("width", "50px");
+		M('#st-control-6').css("height", "50px");
 		
-		M('#st-control-7').css("left", "78.4%");
-		M('#st-control-7link').css("width", "11.6%");
-		M('#st-control-7link').css("left", "78.4%");
-		M('#st-control-7link').css("color", "#FFF");
+		M('#st-control-7').css("top", "300px");
+		M('#st-control-7link').css("background-image", "url('img/nav/halloffameblack.png')");
+		M('#st-control-7link').css("top", "300px");
+		M('#st-control-7').css("left", "0");
+		M('#st-control-7link').css("width", "50px");
+		M('#st-control-7link').css("height", "50px");
+		M('#st-control-7link').css("left", "0");
+		M('#st-control-7').css("width", "50px");
+		M('#st-control-7').css("height", "50px");
 	}
 	
 	function checkFood(){ 
@@ -368,38 +565,74 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-600%)"});
 		L('.st-scroll').css({"transform": "translateY(-600%)"});
 				
-		var M = jQuery.noConflict();
-		M('#st-control-1').css("left", "10%");
-		M('#st-control-1link').css("width", "11.4%");
-		M('#st-control-1link').css("left", "10%");
+				var M = jQuery.noConflict();
+		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
+		M('#st-control-1').css("top", "0");
+		M('#st-control-1link').css("top", "0");
+		M('#st-control-1').css("left", "0");
+		M('#st-control-1link').css("width", "50px");
+		M('#st-control-1link').css("height", "50px");
+		M('#st-control-1').css("width", "50px");
+		M('#st-control-1').css("height", "50px");
+		M('#st-control-1link').css("left", "0");
 		
-		M('#st-control-2').css("left", "21.4%");
-		M('#st-control-2link').css("width", "11.4%");
-		M('#st-control-2link').css("left", "21.4%");
-		M('#st-control-2link').css("color", "#FFF");
+		M('#st-control-2').css("top", "50px");
+		M('#st-control-2link').css("background-image", "url('img/nav/aboutmeblack.png')");
+		M('#st-control-2link').css("top", "50px");
+		M('#st-control-2').css("left", "0");
+		M('#st-control-2link').css("width", "50px");
+		M('#st-control-2link').css("height", "50px");
+		M('#st-control-2').css("width", "50px");
+		M('#st-control-2').css("height", "50px");
+		M('#st-control-2link').css("left", "0");
 	
-		M('#st-control-3').css("left", "32.8%");
-		M('#st-control-3link').css("width", "11.4%");
-		M('#st-control-3link').css("left", "32.8%");
-		M('#st-control-3link').css("color", "#FFF");
+		M('#st-control-3').css("top", "100px");
+		M('#st-control-3link').css("background-image", "url('img/nav/pastprojectsblack.png')");
+		M('#st-control-3link').css("top", "100px");
+		M('#st-control-3').css("left", "0");
+		M('#st-control-3link').css("width", "50px");
+		M('#st-control-3link').css("height", "50px");
+		M('#st-control-3').css("width", "50px");
+		M('#st-control-3').css("height", "50px");
+		M('#st-control-3link').css("left", "0");
 		
-		M('#st-control-4').css("left", "44.2%");
-		M('#st-control-4link').css("width", "11.4%");
-		M('#st-control-4link').css("left", "44.2%");
-		M('#st-control-4link').css("color", "#FFF");
+		M('#st-control-4').css("top", "150px");
+		M('#st-control-4link').css("background-image", "url('img/nav/blogblack.png')");
+		M('#st-control-4link').css("top", "150px");
+		M('#st-control-4').css("left", "0");
+		M('#st-control-4link').css("width", "50px");
+		M('#st-control-4link').css("height", "50px");
+		M('#st-control-4link').css("left", "0");
+		M('#st-control-4').css("width", "50px");
+		M('#st-control-4').css("height", "50px");
 		
-		M('#st-control-5').css("left", "55.6%");
-		M('#st-control-5link').css("width", "11.4%");
-		M('#st-control-5link').css("left", "55.6%");
-		M('#st-control-5link').css("color", "#FFF");
+		M('#st-control-5').css("top", "200px");
+		M('#st-control-5link').css("background-image", "url('img/nav/musicblack.png')");
+		M('#st-control-5link').css("top", "200px");
+		M('#st-control-5').css("left", "0");
+		M('#st-control-5link').css("width", "50px");
+		M('#st-control-5link').css("height", "50px");
+		M('#st-control-5link').css("left", "0");
+		M('#st-control-5').css("width", "50px");
+		M('#st-control-5').css("height", "50px");
 		
-		M('#st-control-6').css("left", "67%");
-		M('#st-control-6link').css("width", "11.4%");
-		M('#st-control-6link').css("left", "67%");
-		M('#st-control-6link').css("color", "#FFF");
+		M('#st-control-6').css("top", "250px");
+		M('#st-control-6link').css("background-image", "url('img/nav/photographyblack.png')");
+		M('#st-control-6link').css("top", "250px");
+		M('#st-control-6').css("left", "0");
+		M('#st-control-6link').css("width", "50px");
+		M('#st-control-6link').css("height", "50px");
+		M('#st-control-6link').css("left", "0");
+		M('#st-control-6').css("width", "50px");
+		M('#st-control-6').css("height", "50px");
 		
-		M('#st-control-7').css("left", "78.4%");
-		M('#st-control-7link').css("width", "11.6%");
-		M('#st-control-7link').css("left", "78.4%");
-		M('#st-control-7link').css("color", "#4FD5D6");
+		M('#st-control-7').css("top", "300px");
+		M('#st-control-7link').css("background-image", "url('img/nav/halloffamered.png')");
+		M('#st-control-7link').css("top", "300px");
+		M('#st-control-7').css("left", "0");
+		M('#st-control-7link').css("width", "50px");
+		M('#st-control-7link').css("height", "50px");
+		M('#st-control-7link').css("left", "0");
+		M('#st-control-7').css("width", "50px");
+		M('#st-control-7').css("height", "50px");
 	}
