@@ -1,5 +1,5 @@
 body{
-	font-family: Georgia, serif;
+	font-family: 'Roboto', sans-serif;
 	background: #ddd;
 	font-weight: 400;
 	font-size: 15px;
@@ -7,6 +7,7 @@ body{
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 }
+
 
 #hi{
 	margin-left: 10%;
@@ -32,7 +33,9 @@ body{
 }
 
 #asaphyuan {
-	font-size: 48px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 56px;
 	margin: 0;
 }
 
@@ -78,7 +81,7 @@ body{
 
 
 #titles {
-	margin-top: -18px;
+	margin-top: 18px;
     font-size:14px;
     font-weight: 100;
 }
@@ -111,7 +114,8 @@ body{
      text-align: center;
      font-size: 40px;
      line-height: 1em;
-     font-weight: bold;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 100;
 }
 
 #typed2format {
