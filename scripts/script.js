@@ -264,6 +264,10 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-o-transform": "translateY(-200%)"});
 		L('.st-scroll').css({"-ms-transform": "translateY(-200%)"});
 		L('.st-scroll').css({"transform": "translateY(-200%)"});
+		
+		
+		L( "#projectstitle" ).addClass('animated fadeInDownBig');
+
 				
 		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
