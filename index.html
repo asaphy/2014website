@@ -65,6 +65,7 @@
 	<div class="tablet">
 		<div class="st-container">
 		
+<!--
 	    <input type="radio" name="radio-set" id="st-control-1" onClick="checkHome();"/>
 	    <a href="#st-panel-1" id="st-control-1link" ><span class="moveLeft"></span></a>
 	     
@@ -85,6 +86,7 @@
 	    
 	    <input type="radio" name="radio-set" id="st-control-7" onClick="checkFood();"/>
 	    <a href="#st-panel-6" id="st-control-7link"><span class="moveLeft"></span></a>
+-->
 		
 	    <div class="st-scroll">
 	    
@@ -93,9 +95,10 @@
 	            <div class="st-deco" data-icon="H"></div>
 
 	  <div class="tablet_container">
-		<div id="next">
-			<a href="#" id="next-link" onClick="checkAbout();" data-toggle="tooltip" title="Scroll Down"></a>
-		</div><!--end of next-->
+
+		<div class="next sink">1/8
+			<a href="#" class="next-link" onClick="checkAbout();" data-toggle="tooltip" title="Scroll Down"></a>
+			</div><!--end of next-->
 		
 		<div class="section group">
 			<div class="col span_1_of_10" id="dynamicheight1">
@@ -489,7 +492,7 @@
 						<div class="st-deco" data-icon="H"></div>
 						
 					  	
-						<h1 class="heading" id="aboutmetitle">About Me</h1>
+						<h1 class="heading rotate" id="aboutmetitle">About Me</h1>
 				
 					  	<div class="section group">
 							<div class="col2">
@@ -545,12 +548,20 @@ girl named, hah, made your heart skip for a sec :)</li>
 								<img src="img/badscale.png" alt="Bad Scale" id="badscale">
 						 </div>
 						</div>
+			<div class="tablet_container">
+							  <div class="prev float">
+			<a href="#" class="prev-link" onClick="checkHome();" data-toggle="tooltip" title="Scroll Up"></a>
+			</div><!--end of prev-->
+		<div class="next sink">2/8
+			<a href="#" class="next-link" onClick="checkProjects();" data-toggle="tooltip" title="Scroll Down"></a>
+			<div style="text-align:center; padding-top:15px;"></div>
+		</div><!--end of next-->
 			</section>
 
 
 			<section class="st-panel st-color" id="st-panel-3">
 						<div class="st-deco" data-icon="2"></div>
-						<h1 class="heading" id="projectstitle">Projects</h1>
+						<h1 class="heading rotate" id="projectstitle">Projects</h1>
 						<div id="slidorion" class="slidorion">
 							<div class="slider">
 								<div class="slide"><img src="img/ptf.jpg" /></div>
@@ -575,34 +586,59 @@ girl named, hah, made your heart skip for a sec :)</li>
 								</div>
 							</div>
 						</div>
+						<div class="tablet_container">
+							  <div class="prev float">
+			<a href="#" class="prev-link" onClick="checkAbout();" data-toggle="tooltip" title="Scroll Up"></a>
+			</div><!--end of prev-->
+						<div class="tablet_container">
+		<div class="next sink">3/8
+			<a href="#" class="next-link" onClick="checkBlog();" data-toggle="tooltip" title="Scroll Down"></a>
+		</div><!--end of next-->
 			</section>
 					
 			<section class="st-panel" id="st-panel-4">
-						<div class="st-deco" data-icon="B"></div>
-						<h1 class="heading">Blog</h1>
+						<h1 class="heading rotate" id="blogtitle">Blog</h1>
 						<div id="recent-posts">
 							<img src="img/blog/latest.jpg" id="latest-post" />
 							<img src="img/blog/latest2.jpg" class="notlatest-post latest-post2" />
 							<img src="img/blog/latest3.jpg" class="notlatest-post" />
 							<img src="img/blog/latest4.jpg" class="notlatest-post" />
 						</div>					
+<!--
 						<div id="top-posts">
 							<img src="img/blog/top.jpg" class="top-posts top-post" />
 							<img src="img/blog/top.jpg" class="top-posts" />
 							<img src="img/blog/top.jpg" class="top-posts" />
 							<img src="img/blog/top.jpg" class="top-posts" />
 						</div>
+-->
+						<div class="tablet_container">
+						<div class="tablet_container">
+							  <div class="prev float">
+			<a href="#" class="prev-link" onClick="checkProjects();" data-toggle="tooltip" title="Scroll Up"></a>
+			</div><!--end of prev-->
+		<div class="next sink">4/8
+			<a href="#" class="next-link" onClick="checkMusic();" data-toggle="tooltip" title="Scroll Down"></a>
+		</div><!--end of next-->
 			</section>
 					
 			<section class="st-panel st-color" id="st-panel-5">
 						<div class="st-deco" data-icon="x"></div>
-						<h1 class="heading">Music</h1>
+						<h1 class="heading rotate" id="musictitle">Music</h1>
 						<h1 class="musicnewstuff">New Stuff Coming Soon!</h1>
+						<div class="tablet_container">
+		<div class="tablet_container">
+							  <div class="prev float">
+			<a href="#" class="prev-link" onClick="checkBlog();" data-toggle="tooltip" title="Scroll Up"></a>
+			</div><!--end of prev-->
+		<div class="next sink">5/8
+			<a href="#" class="next-link" onClick="checkPhotography();" data-toggle="tooltip" title="Scroll Down"></a>
+		</div><!--end of next-->
 			</section>
 					
 			<section class="st-panel" id="st-panel-6">
 						<div class="st-deco" data-icon="Ç"></div>
-						<h1 class="heading">Photography/Travels</h1>
+						<h1 class="heading rotate" id="photographytitle">Photography/Travels</h1>
 						<div id="content">
     <div class="mygallery">
 	<div class="tn3 album">
@@ -688,11 +724,18 @@ girl named, hah, made your heart skip for a sec :)</li>
 	</div>
     </div>
 </div>
+		<div class="tablet_container">
+							  <div class="prev float">
+			<a href="#" class="prev-link" onClick="checkMusic();" data-toggle="tooltip" title="Scroll Up"></a>
+			</div><!--end of prev-->
+		<div class="next sink">6/8
+			<a href="#" class="next-link" onClick="checkFood();" data-toggle="tooltip" title="Scroll Down"></a>
+		</div><!--end of next-->
 			</section>
 	        
 	        <section class="st-panel st-color" id="st-panel-7">
-	        			<h1 class="heading">Hall of Fame</h1>
-						<table class="reference" style="width:68%">
+	        			<h1 class="heading rotate" id="halloffametitle">Hall of Fame</h1>
+						<table class="reference" style="padding: 10% 0 0 15%; width:65%">
 							<tr>
 								<th>Name</th>
 								<th>Year of Induction</th>		
@@ -726,7 +769,7 @@ girl named, hah, made your heart skip for a sec :)</li>
 						</table>
 						
 						
-						<table class="reference" style="width:20%">
+						<table class="reference" style="padding: 0% 0 0 5%; width:20%">
 							<tr>
 								<th>Slick Resources</th>
 							</tr>
@@ -765,7 +808,11 @@ girl named, hah, made your heart skip for a sec :)</li>
 									<a target="_blank" href="http://www.facebook.com/asaph.yuan" id="fb-link"></a>
 									<a target="_blank" href="http://github.com/asaphy" id="github-link"></a>
 							  	</div><!--end of social-media-links-->
-				</div>	  	
+				</div>
+				<div class="tablet_container">
+							  <div class="prev float">
+			<a href="#" class="prev-link" onClick="checkPhotography();" data-toggle="tooltip" title="Scroll Up"></a>
+			</div><!--end of prev-->	  	
 	        </section>
 	    </div><!-- // st-scroll -->
 	     

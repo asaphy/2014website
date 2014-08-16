@@ -173,13 +173,15 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-ms-transform": "translateY(-100%)"});
 		L('.st-scroll').css({"transform": "translateY(-100%)"});
 		
-		L( "#aboutmetitle" ).addClass('animated fadeInDownBig');
 
 		setTimeout(function() {
 		    	L( ".col2" ).addClass('visible animated bounceInLeft');
 				L( ".col2-2" ).addClass('visible animated bounceInRight');
-			}, 800);
-
+			}, 300);
+			
+		setTimeout(function() {
+		    	L( "#aboutmetitle" ).css('display','block');
+			}, 1500);
 
 		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
@@ -264,10 +266,6 @@ $(document).ready(function(){
 		L('.st-scroll').css({"-o-transform": "translateY(-200%)"});
 		L('.st-scroll').css({"-ms-transform": "translateY(-200%)"});
 		L('.st-scroll').css({"transform": "translateY(-200%)"});
-		
-		
-		L( "#projectstitle" ).addClass('animated fadeInDownBig');
-
 				
 		var M = jQuery.noConflict();
 		M('#st-control-1link').css("background-image", "url('img/nav/ay.png')");
